@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/multiset"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/multiset"
 )
 
 // MultisetToDBMultiset converts Multiset to DbMultiset

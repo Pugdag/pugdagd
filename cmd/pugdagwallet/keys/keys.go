@@ -13,10 +13,10 @@ import (
 
 	"github.com/gofrs/flock"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/utils"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/utils"
 
-	"github.com/pugdag/pugdagd/domain/dagconfig"
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/util"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/argon2"
 	"golang.org/x/crypto/chacha20poly1305"

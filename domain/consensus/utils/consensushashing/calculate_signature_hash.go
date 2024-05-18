@@ -1,10 +1,10 @@
 package consensushashing
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/hashes"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/serialization"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/serialization"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 )
 

@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/server"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/server"
 
 	"github.com/pkg/errors"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
 	"google.golang.org/grpc"
 )
 

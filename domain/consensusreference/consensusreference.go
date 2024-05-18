@@ -1,6 +1,6 @@
 package consensusreference
 
-import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // ConsensusReference holds a reference to a consensus object.
 // The consensus object may be swapped with a new one entirely

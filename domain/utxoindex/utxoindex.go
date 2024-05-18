@@ -3,10 +3,10 @@ package utxoindex
 import (
 	"sync"
 
-	"github.com/pugdag/pugdagd/domain"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/domain"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 // UTXOIndex maintains an index between transaction scriptPublicKeys

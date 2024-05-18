@@ -1,8 +1,8 @@
 package transactionhelper
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
 )
 
 // CoinbaseTransactionIndex is the index of the coinbase transaction in every block

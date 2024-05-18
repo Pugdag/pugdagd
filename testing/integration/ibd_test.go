@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/mining"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/mining"
 
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/appmessage"
 )
 
 func TestIBD(t *testing.T) {

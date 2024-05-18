@@ -1,6 +1,6 @@
 package model
 
-import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // BlockRelationStore represents a store of BlockRelations
 type BlockRelationStore interface {

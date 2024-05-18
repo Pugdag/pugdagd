@@ -5,10 +5,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/util"
 
-	"github.com/pugdag/pugdagd/infrastructure/logger"
-	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/util/panics"
 )
 
 var (

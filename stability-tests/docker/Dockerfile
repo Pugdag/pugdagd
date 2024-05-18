@@ -6,9 +6,9 @@ FROM ${KASPAMINER_IMAGE} as pugdagminer
 
 FROM golang:1.19-alpine
 
-RUN mkdir -p /go/src/github.com/pugdag/pugdagd/
+RUN mkdir -p /go/src/github.com/Pugdag/pugdagd/
 
-WORKDIR /go/src/github.com/pugdag/pugdagd/
+WORKDIR /go/src/github.com/Pugdag/pugdagd/
 
 RUN apk add bash build-base git
 
@@ -23,7 +23,7 @@ COPY --from=pugdagd /app/ /app/
 COPY --from=pugdagminer /app/ /app/
 ENV PATH="/app:${PATH}"
 
-WORKDIR /go/src/github.com/pugdag/pugdagd/stability-tests
+WORKDIR /go/src/github.com/Pugdag/pugdagd/stability-tests
 
 RUN go install ./...
 

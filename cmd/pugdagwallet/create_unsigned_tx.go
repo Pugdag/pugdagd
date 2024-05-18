@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/client"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/client"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 )
 
 func createUnsignedTransaction(conf *createUnsignedTransactionConfig) error {

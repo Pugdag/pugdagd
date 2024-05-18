@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 func TestReachabilityData_Equal(t *testing.T) {

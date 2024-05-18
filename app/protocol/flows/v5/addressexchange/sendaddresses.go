@@ -3,9 +3,9 @@ package addressexchange
 import (
 	"math/rand"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 // SendAddressesContext is the interface for the context needed for the SendAddresses flow.

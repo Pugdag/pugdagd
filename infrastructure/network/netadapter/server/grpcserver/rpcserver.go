@@ -1,9 +1,9 @@
 package grpcserver
 
 import (
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
-	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/Pugdag/pugdagd/util/panics"
 )
 
 type rpcServer struct {

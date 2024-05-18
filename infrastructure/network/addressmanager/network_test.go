@@ -8,7 +8,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/appmessage"
 )
 
 // TestIPTypes ensures the various functions which determine the type of an IP

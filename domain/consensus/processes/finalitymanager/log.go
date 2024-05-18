@@ -1,7 +1,7 @@
 package finalitymanager
 
 import (
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 var log = logger.RegisterSubSystem("BDAG")

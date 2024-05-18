@@ -8,12 +8,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
 
-	"github.com/pugdag/pugdagd/domain/consensus"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/model/testapi"
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/domain/consensus"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/testapi"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 	"github.com/pkg/errors"
 )
 

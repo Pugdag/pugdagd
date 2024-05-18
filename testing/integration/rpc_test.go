@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/Pugdag/pugdagd/infrastructure/config"
 
-	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient"
+	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient"
 )
 
 const rpcTimeout = 10 * time.Second

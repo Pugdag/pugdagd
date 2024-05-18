@@ -4,10 +4,10 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/prefixmanager/prefix"
+	"github.com/Pugdag/pugdagd/domain/prefixmanager/prefix"
 
-	"github.com/pugdag/pugdagd/domain/dagconfig"
-	"github.com/pugdag/pugdagd/infrastructure/db/database/ldb"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database/ldb"
 )
 
 func TestNewConsensus(t *testing.T) {

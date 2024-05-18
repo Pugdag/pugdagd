@@ -3,7 +3,7 @@ package ldb
 import (
 	"bytes"
 
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
 	"github.com/pkg/errors"
 	"github.com/syndtr/goleveldb/leveldb/iterator"
 	"github.com/syndtr/goleveldb/leveldb/util"

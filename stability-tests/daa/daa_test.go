@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/pow"
-	"github.com/pugdag/pugdagd/domain/dagconfig"
-	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient"
-	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/pow"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient"
+	"github.com/Pugdag/pugdagd/stability-tests/common"
 )
 
 const rpcAddress = "localhost:9000"

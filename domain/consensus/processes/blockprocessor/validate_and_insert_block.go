@@ -5,16 +5,16 @@ import (
 	_ "embed"
 	"fmt"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/multiset"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
-	"github.com/pugdag/pugdagd/util/difficulty"
-	"github.com/pugdag/pugdagd/util/staging"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/multiset"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/util/difficulty"
+	"github.com/Pugdag/pugdagd/util/staging"
 	"github.com/pkg/errors"
 )
 
@@ -233,7 +233,7 @@ func (bp *blockProcessor) loadUTXODataForGenesis(stagingArea *model.StagingArea,
 	// pruning point.
 	// The actual UTXO set that fits Mainnet's genesis' UTXO commitment was removed from the codebase in order
 	// to make reduce the consensus initialization time and the compiled binary size, but can be still
-	// found here for anyone to verify: https://github.com/pugdag/pugdagd/blob/dbf18d8052f000ba0079be9e79b2d6f5a98b74ca/domain/consensus/processes/blockprocessor/resources/utxos.gz
+	// found here for anyone to verify: https://github.com/Pugdag/pugdagd/blob/dbf18d8052f000ba0079be9e79b2d6f5a98b74ca/domain/consensus/processes/blockprocessor/resources/utxos.gz
 	bp.consensusStateStore.StageVirtualUTXODiff(stagingArea, utxo.NewUTXODiff())
 	bp.utxoDiffStore.Stage(stagingArea, blockHash, utxo.NewUTXODiff(), nil)
 	bp.multisetStore.Stage(stagingArea, blockHash, multiset.New())

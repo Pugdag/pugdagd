@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
 )
 
 func (s *server) Send(_ context.Context, request *pb.SendRequest) (*pb.SendResponse, error) {

@@ -4,13 +4,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/id"
-	mathUtil "github.com/pugdag/pugdagd/util/math"
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/id"
+	mathUtil "github.com/Pugdag/pugdagd/util/math"
+	"github.com/Pugdag/pugdagd/util/mstime"
 )
 
 // Peer holds data about a peer.

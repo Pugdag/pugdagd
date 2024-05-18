@@ -1,7 +1,7 @@
 package protocolerrors
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
 	"github.com/pkg/errors"
 )
 

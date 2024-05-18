@@ -3,7 +3,7 @@ package appmessage
 import (
 	"math/big"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // MsgBlockWithTrustedData represents a kaspa BlockWithTrustedData message

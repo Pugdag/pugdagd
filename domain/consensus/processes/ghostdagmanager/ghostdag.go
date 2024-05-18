@@ -3,9 +3,9 @@ package ghostdagmanager
 import (
 	"math/big"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/util/difficulty"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/util/difficulty"
 	"github.com/pkg/errors"
 )
 

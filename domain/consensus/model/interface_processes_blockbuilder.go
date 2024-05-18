@@ -1,6 +1,6 @@
 package model
 
-import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // BlockBuilder is responsible for creating blocks from the current state
 type BlockBuilder interface {

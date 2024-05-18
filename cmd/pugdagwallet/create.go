@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/utils"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/utils"
 	"github.com/pkg/errors"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/keys"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/keys"
 )
 
 func create(conf *createConfig) error {

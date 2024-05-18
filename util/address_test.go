@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/crypto/blake2b"
 
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/util"
 )
 
 func TestAddresses(t *testing.T) {

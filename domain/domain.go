@@ -5,15 +5,15 @@ import (
 	"sync/atomic"
 	"unsafe"
 
-	"github.com/pugdag/pugdagd/domain/consensusreference"
+	"github.com/Pugdag/pugdagd/domain/consensusreference"
 
-	"github.com/pugdag/pugdagd/domain/consensus"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/miningmanager"
-	"github.com/pugdag/pugdagd/domain/miningmanager/mempool"
-	"github.com/pugdag/pugdagd/domain/prefixmanager"
-	"github.com/pugdag/pugdagd/domain/prefixmanager/prefix"
-	infrastructuredatabase "github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/domain/consensus"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/miningmanager"
+	"github.com/Pugdag/pugdagd/domain/miningmanager/mempool"
+	"github.com/Pugdag/pugdagd/domain/prefixmanager"
+	"github.com/Pugdag/pugdagd/domain/prefixmanager/prefix"
+	infrastructuredatabase "github.com/Pugdag/pugdagd/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

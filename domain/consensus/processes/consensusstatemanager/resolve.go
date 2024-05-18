@@ -3,10 +3,10 @@ package consensusstatemanager
 import (
 	"sort"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
-	"github.com/pugdag/pugdagd/util/staging"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/util/staging"
 	"github.com/pkg/errors"
 )
 

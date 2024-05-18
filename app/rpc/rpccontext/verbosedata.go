@@ -5,17 +5,17 @@ import (
 	"math"
 	"math/big"
 
-	difficultyPackage "github.com/pugdag/pugdagd/util/difficulty"
+	difficultyPackage "github.com/Pugdag/pugdagd/util/difficulty"
 	"github.com/pkg/errors"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/hashes"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 )
 
 // ErrBuildBlockVerboseDataInvalidBlock indicates that a block that was given to BuildBlockVerboseData is invalid.

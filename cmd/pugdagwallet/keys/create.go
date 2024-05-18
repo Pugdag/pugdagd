@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/utils"
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/utils"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 	"github.com/pkg/errors"
 	"github.com/tyler-smith/go-bip39"
 )

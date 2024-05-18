@@ -1,10 +1,10 @@
 package transactionvalidator
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
-	"github.com/pugdag/pugdagd/util/txmass"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/Pugdag/pugdagd/util/txmass"
 )
 
 const sigCacheSize = 10_000

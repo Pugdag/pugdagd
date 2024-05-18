@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 const exitHandlerTimeout = 5 * time.Second

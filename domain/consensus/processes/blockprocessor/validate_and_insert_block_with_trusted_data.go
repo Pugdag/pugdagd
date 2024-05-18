@@ -1,10 +1,10 @@
 package blockprocessor
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
 )
 
 func (bp *blockProcessor) validateAndInsertBlockWithTrustedData(stagingArea *model.StagingArea,

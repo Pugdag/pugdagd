@@ -3,6 +3,7 @@ module github.com/pugdag/pugdagd
 go 1.18
 
 require (
+	github.com/Pugdag/pugdagd v1.0.0
 	github.com/btcsuite/btcutil v1.0.2
 	github.com/btcsuite/go-socks v0.0.0-20170105172521-4720035b7bfd
 	github.com/btcsuite/winsvc v1.0.0
@@ -31,5 +32,4 @@ require (
 	golang.org/x/sys v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
 	google.golang.org/genproto v0.0.0-20210604141403-392c879c8b08 // indirect
-	gopkg.in/yaml.v2 v2.3.0 // indirect
 )

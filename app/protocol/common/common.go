@@ -3,8 +3,8 @@ package common
 import (
 	"time"
 
-	peerpkg "github.com/pugdag/pugdagd/app/protocol/peer"
-	routerpkg "github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
+	peerpkg "github.com/Pugdag/pugdagd/app/protocol/peer"
+	routerpkg "github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
 
 	"github.com/pkg/errors"
 )

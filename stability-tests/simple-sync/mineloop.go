@@ -3,10 +3,10 @@ package main
 import (
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/stability-tests/common"
-	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/stability-tests/common"
+	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/Pugdag/pugdagd/util"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 )

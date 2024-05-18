@@ -12,15 +12,15 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	pb2 "github.com/pugdag/pugdagd/infrastructure/network/dnsseed/pb"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	pb2 "github.com/Pugdag/pugdagd/infrastructure/network/dnsseed/pb"
 	"google.golang.org/grpc"
 
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/util/mstime"
 
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 )
 
 const (

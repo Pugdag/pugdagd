@@ -3,12 +3,12 @@ package protowire
 import (
 	"math"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionid"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionid"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/util/mstime"
 	"github.com/pkg/errors"
 )
 

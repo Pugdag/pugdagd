@@ -3,7 +3,7 @@ package bip32
 import (
 	"encoding/binary"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32/base58"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32/base58"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 )

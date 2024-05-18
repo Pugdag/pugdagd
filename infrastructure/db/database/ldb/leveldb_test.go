@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
 )
 
 func prepareDatabaseForTest(t *testing.T, testName string) (ldb *LevelDB, teardownFunc func()) {

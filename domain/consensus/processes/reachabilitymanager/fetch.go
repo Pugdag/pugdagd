@@ -1,10 +1,10 @@
 package reachabilitymanager
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/database"
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/reachabilitydata"
+	"github.com/Pugdag/pugdagd/domain/consensus/database"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/reachabilitydata"
 	"github.com/pkg/errors"
 )
 

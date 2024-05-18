@@ -9,12 +9,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/util/mstime"
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // TestBlock tests the MsgBlock API.

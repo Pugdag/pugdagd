@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pugdag/pugdagd/stability-tests/common"
-	"github.com/pugdag/pugdagd/util/profiling"
+	"github.com/Pugdag/pugdagd/stability-tests/common"
+	"github.com/Pugdag/pugdagd/util/profiling"
 )
 
 func main() {

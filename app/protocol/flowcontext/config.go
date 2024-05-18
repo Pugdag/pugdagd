@@ -1,6 +1,6 @@
 package flowcontext
 
-import "github.com/pugdag/pugdagd/infrastructure/config"
+import "github.com/Pugdag/pugdagd/infrastructure/config"
 
 // Config returns an instance of *config.Config associated to the flow context.
 func (f *FlowContext) Config() *config.Config {

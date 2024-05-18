@@ -3,7 +3,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 )
 
 // FormatKas takes the amount of sompis as uint64, and returns amount of KAS with 8  decimal places

@@ -5,18 +5,18 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/app/rpc/rpccontext"
-	"github.com/pugdag/pugdagd/app/rpc/rpchandlers"
-	"github.com/pugdag/pugdagd/domain/consensus"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/model/testapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/hashes"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/pugdag/pugdagd/domain/miningmanager"
-	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/rpc/rpccontext"
+	"github.com/Pugdag/pugdagd/app/rpc/rpchandlers"
+	"github.com/Pugdag/pugdagd/domain/consensus"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/testapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/Pugdag/pugdagd/domain/miningmanager"
+	"github.com/Pugdag/pugdagd/infrastructure/config"
 )
 
 type fakeDomain struct {

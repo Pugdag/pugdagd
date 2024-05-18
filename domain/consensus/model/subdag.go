@@ -1,6 +1,6 @@
 package model
 
-import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // SubDAG represents a context-free representation of a partial DAG
 type SubDAG struct {

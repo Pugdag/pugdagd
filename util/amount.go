@@ -8,7 +8,7 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 )
 

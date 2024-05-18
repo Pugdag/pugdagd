@@ -5,9 +5,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

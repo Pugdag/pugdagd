@@ -5,9 +5,9 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/pugdag/pugdagd/util/difficulty"
+	"github.com/Pugdag/pugdagd/util/difficulty"
 
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/util"
 )
 
 func ExampleAmount() {

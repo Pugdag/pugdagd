@@ -8,7 +8,7 @@ import (
 	_ "net/http/pprof"
 	"os"
 
-	"github.com/pugdag/pugdagd/app"
+	"github.com/Pugdag/pugdagd/app"
 )
 
 func main() {

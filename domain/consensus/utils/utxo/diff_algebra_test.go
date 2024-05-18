@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionid"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionid"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 func (mud *mutableUTXODiff) equal(other *mutableUTXODiff) bool {

@@ -3,11 +3,11 @@ package mempool
 import (
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/util"
 
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 )
 
 const (

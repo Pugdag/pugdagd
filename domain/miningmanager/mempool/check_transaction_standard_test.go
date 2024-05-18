@@ -9,17 +9,17 @@ import (
 	"math"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensusreference"
+	"github.com/Pugdag/pugdagd/domain/consensusreference"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
 
-	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/Pugdag/pugdagd/domain/consensus"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/Pugdag/pugdagd/util"
 	"github.com/pkg/errors"
 )
 

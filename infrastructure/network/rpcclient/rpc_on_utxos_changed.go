@@ -1,8 +1,8 @@
 package rpcclient
 
 import (
-	"github.com/pugdag/pugdagd/app/appmessage"
-	routerpkg "github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	routerpkg "github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

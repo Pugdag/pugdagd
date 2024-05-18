@@ -3,8 +3,8 @@ package libkaspawallet
 import (
 	"fmt"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32"
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 	"github.com/pkg/errors"
 	"github.com/tyler-smith/go-bip39"
 )

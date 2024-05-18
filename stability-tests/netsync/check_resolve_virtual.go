@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
 	"github.com/pkg/errors"
 )
 

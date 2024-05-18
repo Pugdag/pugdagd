@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/appmessage"
 )
 
 func TestVirtualSelectedParentBlueScoreAndVirtualDAAScore(t *testing.T) {

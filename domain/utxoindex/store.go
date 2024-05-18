@@ -3,10 +3,10 @@ package utxoindex
 import (
 	"encoding/binary"
 
-	"github.com/pugdag/pugdagd/domain/consensus/database/binaryserialization"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/domain/consensus/database/binaryserialization"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 

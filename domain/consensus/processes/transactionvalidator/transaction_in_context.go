@@ -3,13 +3,13 @@ package transactionvalidator
 import (
 	"math"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
 	"github.com/pkg/errors"
 )
 

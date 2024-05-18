@@ -3,20 +3,20 @@ package transactionrelay_test
 import (
 	"testing"
 
-	"github.com/pugdag/pugdagd/app/protocol/flowcontext"
-	"github.com/pugdag/pugdagd/app/protocol/flows/v5/transactionrelay"
+	"github.com/Pugdag/pugdagd/app/protocol/flowcontext"
+	"github.com/Pugdag/pugdagd/app/protocol/flows/v5/transactionrelay"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/domain"
-	"github.com/pugdag/pugdagd/domain/consensus"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/pugdag/pugdagd/domain/miningmanager/mempool"
-	"github.com/pugdag/pugdagd/infrastructure/config"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
-	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/domain"
+	"github.com/Pugdag/pugdagd/domain/consensus"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/Pugdag/pugdagd/domain/miningmanager/mempool"
+	"github.com/Pugdag/pugdagd/infrastructure/config"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/util/panics"
 	"github.com/pkg/errors"
 )
 

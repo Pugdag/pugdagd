@@ -4,13 +4,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/pugdag/pugdagd/infrastructure/logger"
-	"github.com/pugdag/pugdagd/util/math"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/util/math"
 
-	"github.com/pugdag/pugdagd/util/difficulty"
+	"github.com/Pugdag/pugdagd/util/difficulty"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // DifficultyManager provides a method to resolve the

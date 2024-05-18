@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/dagconfig"
-	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/infrastructure/config"
 )
 
 const (

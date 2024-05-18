@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // MsgRequestAddresses implements the Message interface and represents a kaspa

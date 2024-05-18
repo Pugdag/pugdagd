@@ -7,10 +7,10 @@ package dagconfig
 import (
 	"math/big"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/blockheader"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/blockheader"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
 	"github.com/kaspanet/go-muhash"
 )
 

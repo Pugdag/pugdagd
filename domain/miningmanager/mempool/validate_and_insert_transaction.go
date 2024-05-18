@@ -3,10 +3,10 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
 )
 
 func (mp *mempool) validateAndInsertTransaction(transaction *externalapi.DomainTransaction, isHighPriority bool,

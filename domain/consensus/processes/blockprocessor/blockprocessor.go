@@ -3,10 +3,10 @@ package blockprocessor
 import (
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/processes/blockprocessor/blocklogger"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/processes/blockprocessor/blocklogger"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 // blockProcessor is responsible for processing incoming blocks

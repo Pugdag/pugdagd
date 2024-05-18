@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 var commandTypes = []reflect.Type{

@@ -1,9 +1,9 @@
 package rejects
 
 import (
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 // HandleRejectsContext is the interface for the context needed for the HandleRejects flow.

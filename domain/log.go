@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 var log = logger.RegisterSubSystem("DOMN")

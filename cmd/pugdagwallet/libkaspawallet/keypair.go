@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32"
-	"github.com/pugdag/pugdagd/domain/dagconfig"
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/bip32"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/util"
 	"github.com/kaspanet/go-secp256k1"
 	"github.com/pkg/errors"
 )

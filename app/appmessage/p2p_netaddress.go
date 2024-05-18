@@ -7,7 +7,7 @@ package appmessage
 import (
 	"net"
 
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/util/mstime"
 )
 
 // NetAddress defines information about a peer on the network including the time

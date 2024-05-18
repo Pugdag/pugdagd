@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pugdag/pugdagd/infrastructure/config"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/standalone"
+	"github.com/Pugdag/pugdagd/infrastructure/config"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/standalone"
 )
 
 func connectToNode() *standalone.Routes {

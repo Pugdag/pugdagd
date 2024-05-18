@@ -3,7 +3,7 @@ package reachabilitymanager
 import (
 	"math"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
 	"github.com/pkg/errors"
 )
 

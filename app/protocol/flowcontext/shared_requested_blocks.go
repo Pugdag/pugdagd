@@ -3,7 +3,7 @@ package flowcontext
 import (
 	"sync"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // SharedRequestedBlocks is a data structure that is shared between peers that

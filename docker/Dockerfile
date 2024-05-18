@@ -1,9 +1,9 @@
 # -- multistage docker build: stage #1: build stage
 FROM golang:1.19-alpine AS build
 
-RUN mkdir -p /go/src/github.com/pugdag/pugdagd
+RUN mkdir -p /go/src/github.com/Pugdag/pugdagd
 
-WORKDIR /go/src/github.com/pugdag/pugdagd
+WORKDIR /go/src/github.com/Pugdag/pugdagd
 
 RUN apk add --no-cache curl git openssh binutils gcc musl-dev
 
@@ -24,8 +24,8 @@ WORKDIR /app
 
 RUN apk add --no-cache ca-certificates tini
 
-COPY --from=build /go/src/github.com/pugdag/pugdagd/pugdagd /app/
-COPY --from=build /go/src/github.com/pugdag/pugdagd/infrastructure/config/sample-pugdagd.conf /app/
+COPY --from=build /go/src/github.com/Pugdag/pugdagd/pugdagd /app/
+COPY --from=build /go/src/github.com/Pugdag/pugdagd/infrastructure/config/sample-pugdagd.conf /app/
 
 USER nobody
 ENTRYPOINT [ "/sbin/tini", "--" ]

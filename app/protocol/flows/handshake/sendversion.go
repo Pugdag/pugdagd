@@ -1,12 +1,12 @@
 package handshake
 
 import (
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/app/protocol/common"
-	peerpkg "github.com/pugdag/pugdagd/app/protocol/peer"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
-	"github.com/pugdag/pugdagd/version"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/protocol/common"
+	peerpkg "github.com/Pugdag/pugdagd/app/protocol/peer"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/version"
 	"github.com/pkg/errors"
 )
 

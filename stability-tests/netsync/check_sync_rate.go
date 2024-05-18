@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
 
 	"github.com/pkg/errors"
 )

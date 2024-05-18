@@ -5,7 +5,7 @@
 package appmessage
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // MsgTransactionNotFound defines a kaspa TransactionNotFound message which is sent in response to

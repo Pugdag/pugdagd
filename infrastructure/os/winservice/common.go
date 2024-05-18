@@ -1,6 +1,6 @@
 package winservice
 
-import "github.com/pugdag/pugdagd/infrastructure/config"
+import "github.com/Pugdag/pugdagd/infrastructure/config"
 
 // ServiceDescription contains information about a service, needed to administer it
 type ServiceDescription struct {

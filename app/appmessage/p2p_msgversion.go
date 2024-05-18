@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/version"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/version"
 
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/id"
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/id"
+	"github.com/Pugdag/pugdagd/util/mstime"
 )
 
 // MaxUserAgentLen is the maximum allowed length for the user agent field in a

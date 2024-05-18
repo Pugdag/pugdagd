@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/app/protocol/common"
-	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/protocol/common"
+	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
 	"github.com/pkg/errors"
 )
 

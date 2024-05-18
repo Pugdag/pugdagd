@@ -5,16 +5,16 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/blockheader"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/blockheader"
 
-	"github.com/pugdag/pugdagd/domain/consensus"
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/Pugdag/pugdagd/domain/consensus"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
 )
 
 func TestValidateMedianTime(t *testing.T) {

@@ -1,7 +1,7 @@
 package lrucache
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // LRUCache is a least-recently-used cache for any type

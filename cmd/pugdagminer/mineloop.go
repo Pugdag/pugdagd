@@ -6,15 +6,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pugdag/pugdagd/version"
+	"github.com/Pugdag/pugdagd/version"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/cmd/pugdagminer/templatemanager"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/pow"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/cmd/pugdagminer/templatemanager"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/pow"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/util"
 	"github.com/pkg/errors"
 )
 

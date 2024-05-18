@@ -1,9 +1,9 @@
 package daablocksstore
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/database/binaryserialization"
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/database/binaryserialization"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 type daaBlocksStagingShard struct {

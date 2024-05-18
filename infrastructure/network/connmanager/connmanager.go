@@ -6,15 +6,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/infrastructure/network/dnsseed"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/infrastructure/network/dnsseed"
 	"github.com/pkg/errors"
 
-	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
 
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
 
-	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/Pugdag/pugdagd/infrastructure/config"
 )
 
 // connectionRequest represents a user request (either through CLI or RPC) to connect to a certain node

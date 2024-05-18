@@ -8,7 +8,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/pugdag/pugdagd/util/bech32"
+	"github.com/Pugdag/pugdagd/util/bech32"
 )
 
 // This example demonstrates how to decode a bech32 encoded string.

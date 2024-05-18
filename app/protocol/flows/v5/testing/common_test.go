@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
 	"github.com/pkg/errors"
 )
 

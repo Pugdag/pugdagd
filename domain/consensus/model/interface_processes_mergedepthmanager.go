@@ -1,6 +1,6 @@
 package model
 
-import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // MergeDepthManager is used to validate mergeDepth for blocks
 type MergeDepthManager interface {

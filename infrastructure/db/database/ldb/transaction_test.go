@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
 )
 
 func TestTransactionCloseErrors(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
 )
 
 type dbTransaction struct {

@@ -5,7 +5,7 @@
 package signal
 
 import (
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 var kasdLog = logger.RegisterSubSystem("PUGD")

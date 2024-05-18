@@ -1,8 +1,8 @@
 package testapi
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // TestConsensusStateManager  adds to the main ConsensusStateManager methods required by tests

@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/reachabilitydata"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/reachabilitydata"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 	"github.com/pkg/errors"
 )

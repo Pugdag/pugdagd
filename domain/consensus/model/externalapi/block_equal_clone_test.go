@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/blockheader"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/blockheader"
 )
 
 type blockToCompare struct {

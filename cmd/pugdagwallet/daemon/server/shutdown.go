@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
 )
 
 func (s *server) Shutdown(ctx context.Context, request *pb.ShutdownRequest) (*pb.ShutdownResponse, error) {

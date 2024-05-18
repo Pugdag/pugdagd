@@ -1,11 +1,11 @@
 package pow
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/hashes"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/serialization"
-	"github.com/pugdag/pugdagd/util/difficulty"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/serialization"
+	"github.com/Pugdag/pugdagd/util/difficulty"
 
 	"math/big"
 

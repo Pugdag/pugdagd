@@ -3,8 +3,8 @@ package staging
 import (
 	"sync/atomic"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 // CommitAllChanges creates a transaction in `databaseContext`, and commits all changes in `stagingArea` through it.

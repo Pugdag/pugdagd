@@ -8,14 +8,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/util/network"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/util/network"
 
 	"github.com/pkg/errors"
 
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/util"
 )
 
 // These variables are the DAG proof-of-work limit parameters for each default
@@ -175,7 +175,7 @@ type Params struct {
 	// CoinbasePayloadScriptPublicKeyMaxLength is the maximum allowed script public key in the coinbase's payload
 	CoinbasePayloadScriptPublicKeyMaxLength uint8
 
-	// PruningProofM is the 'm' constant in the pruning proof. For more details see: https://github.com/pugdag/research/issues/3
+	// PruningProofM is the 'm' constant in the pruning proof. For more details see: https://github.com/Pugdag/research/issues/3
 	PruningProofM uint64
 
 	// DeflationaryPhaseDaaScore is the DAA score after which the monetary policy switches

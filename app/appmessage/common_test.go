@@ -1,6 +1,6 @@
 package appmessage
 
-import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // mainnetGenesisHash is the hash of the first block in the block DAG for the
 // main network (genesis block).

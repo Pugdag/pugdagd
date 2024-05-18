@@ -7,7 +7,7 @@ package addressmanager
 import (
 	"net"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/appmessage"
 )
 
 var (

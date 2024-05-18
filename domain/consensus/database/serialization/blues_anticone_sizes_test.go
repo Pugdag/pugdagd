@@ -3,7 +3,7 @@ package serialization
 import (
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // TestBlueAnticoneSizesSize tests that no data can be loss when converting externalapi.KType to the corresponding type in

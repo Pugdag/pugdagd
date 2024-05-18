@@ -1,21 +1,21 @@
 package transactionvalidator_test
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus"
-	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/domain/consensus"
+	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/Pugdag/pugdagd/util"
 	"github.com/kaspanet/go-secp256k1"
 
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 )
 

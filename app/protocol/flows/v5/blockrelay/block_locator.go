@@ -1,10 +1,10 @@
 package blockrelay
 
 import (
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/app/protocol/common"
-	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/protocol/common"
+	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 func (flow *handleRelayInvsFlow) sendGetBlockLocator(highHash *externalapi.DomainHash, limit uint32) error {

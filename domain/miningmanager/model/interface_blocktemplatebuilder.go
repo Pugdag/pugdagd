@@ -1,7 +1,7 @@
 package model
 
 import (
-	consensusexternalapi "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	consensusexternalapi "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // BlockTemplateBuilder builds block templates for miners to consume

@@ -1,14 +1,14 @@
 package rpchandlers
 
 import (
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/app/rpc/rpccontext"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
-	"github.com/pugdag/pugdagd/util"
-	"github.com/pugdag/pugdagd/version"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/rpc/rpccontext"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/version"
 )
 
 // HandleGetBlockTemplate handles the respectively named RPC command

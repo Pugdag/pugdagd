@@ -1,6 +1,6 @@
 package lrucachehashandwindowsizetoblockghostdagdatahashpairs
 
-import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 
 type lruKey struct {
 	blockHash  externalapi.DomainHash

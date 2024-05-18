@@ -3,13 +3,13 @@ package mempool
 import (
 	"fmt"
 
-	"github.com/pugdag/pugdagd/util/txmass"
+	"github.com/Pugdag/pugdagd/util/txmass"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
 )
 
 const (

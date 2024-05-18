@@ -4,8 +4,8 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/pow"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/pow"
 	"github.com/pkg/errors"
 )
 

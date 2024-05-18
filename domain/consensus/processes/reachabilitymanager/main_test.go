@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
 )
 
 const logLevel = logger.LevelWarn

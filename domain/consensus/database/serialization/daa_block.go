@@ -1,7 +1,7 @@
 package serialization
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // BlockGHOSTDAGDataHashPairToDbBlockGhostdagDataHashPair converts *externalapi.BlockGHOSTDAGDataHashPair to *DbBlockGHOSTDAGDataHashPair

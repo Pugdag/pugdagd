@@ -1,7 +1,7 @@
 package utxo
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 type utxoEntry struct {

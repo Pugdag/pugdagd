@@ -3,7 +3,7 @@ package main
 import (
 	"path/filepath"
 
-	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/Pugdag/pugdagd/stability-tests/common"
 	"github.com/jessevdk/go-flags"
 )
 

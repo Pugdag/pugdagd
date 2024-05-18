@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
-	"github.com/pugdag/pugdagd/infrastructure/db/database/ldb"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database/ldb"
 )
 
 type databasePrepareFunc func(t *testing.T, testName string) (db database.Database, name string, teardownFunc func())

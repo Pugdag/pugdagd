@@ -12,7 +12,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/util"
 )
 
 // TestAppDataDir tests the API for AppDir to ensure it gives expected

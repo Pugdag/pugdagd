@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // BlocksWithTrustedDataDAAWindowStore stores the DAA window of blocks with trusted data

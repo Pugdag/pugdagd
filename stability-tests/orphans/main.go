@@ -7,9 +7,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/pugdag/pugdagd/stability-tests/common"
-	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
-	"github.com/pugdag/pugdagd/util/profiling"
+	"github.com/Pugdag/pugdagd/stability-tests/common"
+	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/Pugdag/pugdagd/util/profiling"
 )
 
 var timeout = 30 * time.Second

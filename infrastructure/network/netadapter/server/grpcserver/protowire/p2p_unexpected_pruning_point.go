@@ -1,6 +1,6 @@
 package protowire
 
-import "github.com/pugdag/pugdagd/app/appmessage"
+import "github.com/Pugdag/pugdagd/app/appmessage"
 
 func (x *PugdagdMessage_UnexpectedPruningPoint) toAppMessage() (appmessage.Message, error) {
 	return &appmessage.MsgUnexpectedPruningPoint{}, nil

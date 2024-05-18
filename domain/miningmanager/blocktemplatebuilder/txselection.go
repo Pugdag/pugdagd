@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"sort"
 
-	consensusexternalapi "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	consensusexternalapi "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
 )
 
 const (

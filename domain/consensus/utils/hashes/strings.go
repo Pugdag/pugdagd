@@ -1,7 +1,7 @@
 package hashes
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // ToStrings converts a slice of hashes into a slice of the corresponding strings

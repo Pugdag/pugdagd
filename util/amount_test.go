@@ -8,9 +8,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 
-	. "github.com/pugdag/pugdagd/util"
+	. "github.com/Pugdag/pugdagd/util"
 )
 
 func TestAmountCreation(t *testing.T) {

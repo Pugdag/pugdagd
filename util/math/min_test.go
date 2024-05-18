@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	utilMath "github.com/pugdag/pugdagd/util/math"
+	utilMath "github.com/Pugdag/pugdagd/util/math"
 )
 
 const (

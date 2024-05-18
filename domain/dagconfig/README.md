@@ -2,7 +2,7 @@ dagconfig
 ========
 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/pugdag/pugdagd/dagconfig)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/Pugdag/pugdagd/dagconfig)
 
 Package dagconfig defines DAG configuration parameters for the standard
 Pugdagd networks and provides the ability for callers to define their own custom
@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/pugdag/pugdagd/util"
-	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/Pugdag/pugdagd/util"
+	"github.com/Pugdag/pugdagd/domain/dagconfig"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Kaspa network")

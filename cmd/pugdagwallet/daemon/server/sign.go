@@ -3,9 +3,9 @@ package server
 import (
 	"context"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
 )
 
 func (s *server) Sign(_ context.Context, request *pb.SignRequest) (*pb.SignResponse, error) {

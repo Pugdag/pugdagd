@@ -3,13 +3,13 @@ package coinbasemanager
 import (
 	"math"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/hashset"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/domain/consensus/model"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashset"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

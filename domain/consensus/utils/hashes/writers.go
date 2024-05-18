@@ -3,7 +3,7 @@ package hashes
 import (
 	"hash"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/sha3"
 	"lukechampine.com/blake3"

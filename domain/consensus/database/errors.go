@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
 )
 
 // ErrNotFound denotes that the requested item was not

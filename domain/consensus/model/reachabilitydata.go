@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // MutableReachabilityData represents a node in the reachability tree

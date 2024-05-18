@@ -3,8 +3,8 @@ package pow
 import (
 	"math"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/hashes"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
 )
 
 const eps float64 = 1e-9

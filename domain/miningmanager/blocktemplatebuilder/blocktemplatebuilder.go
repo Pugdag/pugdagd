@@ -4,18 +4,18 @@ import (
 	"math"
 	"sort"
 
-	"github.com/pugdag/pugdagd/domain/consensus/processes/coinbasemanager"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/merkle"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
-	"github.com/pugdag/pugdagd/domain/consensusreference"
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/domain/consensus/processes/coinbasemanager"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/merkle"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/Pugdag/pugdagd/domain/consensusreference"
+	"github.com/Pugdag/pugdagd/util/mstime"
 
-	"github.com/pugdag/pugdagd/util/difficulty"
+	"github.com/Pugdag/pugdagd/util/difficulty"
 
-	consensusexternalapi "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
-	miningmanagerapi "github.com/pugdag/pugdagd/domain/miningmanager/model"
+	consensusexternalapi "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	miningmanagerapi "github.com/Pugdag/pugdagd/domain/miningmanager/model"
 	"github.com/pkg/errors"
 )
 
@@ -156,7 +156,7 @@ func (btb *blockTemplateBuilder) BuildBlockTemplate(
 		if err != nil {
 			// mempool.RemoveTransactions might return errors in situations that are perfectly fine in this context.
 			// TODO: Once the mempool invariants are clear, this should be converted back `return nil, err`:
-			// https://github.com/pugdag/pugdagd/issues/1553
+			// https://github.com/Pugdag/pugdagd/issues/1553
 			log.Criticalf("Error from mempool.RemoveTransactions: %+v", err)
 		}
 		// We can call this recursively without worry because this should almost never happen

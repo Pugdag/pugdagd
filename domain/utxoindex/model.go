@@ -1,7 +1,7 @@
 package utxoindex
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // ScriptPublicKeyString is a script public key represented as a string

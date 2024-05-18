@@ -7,8 +7,8 @@ package blocklogger
 import (
 	"time"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/util/mstime"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/util/mstime"
 )
 
 // BlockLogger is a type tracking the amount of blocks/headers/transactions to log the time it took to receive them

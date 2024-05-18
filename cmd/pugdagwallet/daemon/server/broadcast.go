@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/serialization"
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/serialization"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 )
 

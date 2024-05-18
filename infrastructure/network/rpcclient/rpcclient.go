@@ -4,12 +4,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
-	"github.com/pugdag/pugdagd/infrastructure/logger"
-	routerpkg "github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
-	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient/grpcclient"
-	"github.com/pugdag/pugdagd/util/panics"
-	"github.com/pugdag/pugdagd/version"
+	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	routerpkg "github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient/grpcclient"
+	"github.com/Pugdag/pugdagd/util/panics"
+	"github.com/Pugdag/pugdagd/version"
 	"github.com/pkg/errors"
 )
 

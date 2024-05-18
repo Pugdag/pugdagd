@@ -5,13 +5,13 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server"
+	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server"
 	"google.golang.org/grpc"
 )
 

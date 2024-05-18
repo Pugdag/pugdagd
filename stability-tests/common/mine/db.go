@@ -3,9 +3,9 @@ package mine
 import (
 	"path/filepath"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/infrastructure/db/database"
-	"github.com/pugdag/pugdagd/infrastructure/db/database/ldb"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/Pugdag/pugdagd/infrastructure/db/database/ldb"
 )
 
 const leveldbCacheSizeMiB = 256

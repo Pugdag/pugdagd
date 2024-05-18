@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/Pugdag/pugdagd/app/appmessage"
 )
 
 // AddressRandomize implement addressRandomizer interface

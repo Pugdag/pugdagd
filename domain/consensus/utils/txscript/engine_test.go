@@ -7,9 +7,9 @@ package txscript
 import (
 	"testing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
 
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // TestBadPC sets the pc to a deliberately bad result then confirms that Step()

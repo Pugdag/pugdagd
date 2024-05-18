@@ -3,7 +3,7 @@ package dagconfig_test
 import (
 	"testing"
 
-	. "github.com/pugdag/pugdagd/domain/dagconfig"
+	. "github.com/Pugdag/pugdagd/domain/dagconfig"
 )
 
 // Define some of the required parameters for a user-registered

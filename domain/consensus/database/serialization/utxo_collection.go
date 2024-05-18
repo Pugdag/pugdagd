@@ -1,8 +1,8 @@
 package serialization
 
 import (
-	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
 )
 
 func utxoCollectionToDBUTXOCollection(utxoCollection externalapi.UTXOCollection) ([]*DbUtxoCollectionItem, error) {

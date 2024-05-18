@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/keys"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/pugdag/pugdagd/cmd/pugdagwallet/utils"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/keys"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/utils"
 
 	"github.com/pkg/errors"
 )

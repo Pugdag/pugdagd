@@ -1,5 +1,5 @@
 package pruningmanager
 
-import "github.com/pugdag/pugdagd/infrastructure/logger"
+import "github.com/Pugdag/pugdagd/infrastructure/logger"
 
 var log = logger.RegisterSubSystem("PRNM")
