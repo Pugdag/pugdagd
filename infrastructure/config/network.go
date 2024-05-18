@@ -7,10 +7,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
-	"github.com/Pugdag/pugdagd/util/difficulty"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/util/difficulty"
 	"github.com/jessevdk/go-flags"
 	"github.com/pkg/errors"
 )

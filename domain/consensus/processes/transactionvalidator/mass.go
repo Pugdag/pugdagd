@@ -1,7 +1,7 @@
 package transactionvalidator
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // PopulateMass calculates and populates the mass of the given transaction

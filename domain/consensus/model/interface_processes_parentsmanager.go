@@ -1,6 +1,6 @@
 package model
 
-import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // ParentsManager lets is a wrapper above header parents that replaces empty parents with genesis when needed.
 type ParentsManager interface {

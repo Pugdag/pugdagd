@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 )
 
 // TestGenerateFastPruningIBDTest generates the json needed for dag-for-fast-pruning-ibd-test.json.gz

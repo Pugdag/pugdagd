@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
-	"github.com/Pugdag/pugdagd/stability-tests/common/mine"
-	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
-	"github.com/Pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/stability-tests/common/mine"
+	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/pugdag/pugdagd/util/panics"
 )
 
 // log is a logger that is initialized with no output filters. This

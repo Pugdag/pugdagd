@@ -9,7 +9,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/infrastructure/db/database"
 )
 
 func TestDatabasePut(t *testing.T) {

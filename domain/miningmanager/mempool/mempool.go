@@ -3,13 +3,13 @@ package mempool
 import (
 	"sync"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
 
-	"github.com/Pugdag/pugdagd/domain/consensusreference"
+	"github.com/pugdag/pugdagd/domain/consensusreference"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	miningmanagermodel "github.com/Pugdag/pugdagd/domain/miningmanager/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	miningmanagermodel "github.com/pugdag/pugdagd/domain/miningmanager/model"
 )
 
 type mempool struct {

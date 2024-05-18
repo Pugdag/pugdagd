@@ -3,9 +3,9 @@ package consensus_test
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 )
 
 func TestPruningDepth(t *testing.T) {

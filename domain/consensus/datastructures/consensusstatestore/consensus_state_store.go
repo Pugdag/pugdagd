@@ -1,10 +1,10 @@
 package consensusstatestore
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxolrucache"
-	"github.com/Pugdag/pugdagd/util/staging"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/utxolrucache"
+	"github.com/pugdag/pugdagd/util/staging"
 )
 
 var importingPruningPointUTXOSetKeyName = []byte("importing-pruning-point-utxo-set")

@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // GHOSTDAGManagerConstructor is the function signature for a constructor of a type implementing model.GHOSTDAGManager

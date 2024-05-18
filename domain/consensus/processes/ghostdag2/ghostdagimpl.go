@@ -3,12 +3,12 @@ package ghostdag2
 import (
 	"sort"
 
-	"github.com/Pugdag/pugdagd/util/difficulty"
+	"github.com/pugdag/pugdagd/util/difficulty"
 
 	"math/big"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 type ghostdagHelper struct {

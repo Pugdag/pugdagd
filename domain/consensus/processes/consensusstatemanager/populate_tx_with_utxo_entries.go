@@ -1,10 +1,10 @@
 package consensusstatemanager
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
 )
 
 // PopulateTransactionWithUTXOEntries populates the transaction UTXO entries with data from the virtual's UTXO set.

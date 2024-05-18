@@ -3,10 +3,10 @@ package pastmediantimemanager
 import (
 	"sort"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/sorters"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/sorters"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 	"github.com/pkg/errors"
 )
 

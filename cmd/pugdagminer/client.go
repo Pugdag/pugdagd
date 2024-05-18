@@ -3,9 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
-	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient"
 	"github.com/pkg/errors"
 )
 

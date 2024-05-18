@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	"github.com/Pugdag/pugdagd/infrastructure/db/database/ldb"
-	"github.com/Pugdag/pugdagd/util/mstime"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/db/database/ldb"
+	"github.com/pugdag/pugdagd/util/mstime"
 )
 
 func newAddressManagerForTest(t *testing.T, testName string) (addressManager *AddressManager, teardown func()) {

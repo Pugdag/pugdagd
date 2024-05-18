@@ -1,6 +1,6 @@
 package appmessage
 
-import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // MsgPruningPointUTXOSetChunk represents a kaspa PruningPointUTXOSetChunk message
 type MsgPruningPointUTXOSetChunk struct {

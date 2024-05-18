@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

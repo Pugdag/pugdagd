@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"unicode"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 // protobuf generates the command types with two types:

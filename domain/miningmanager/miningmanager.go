@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensusreference"
-	miningmanagermodel "github.com/Pugdag/pugdagd/domain/miningmanager/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensusreference"
+	miningmanagermodel "github.com/pugdag/pugdagd/domain/miningmanager/model"
 )
 
 // MiningManager creates block templates for mining as well as maintaining

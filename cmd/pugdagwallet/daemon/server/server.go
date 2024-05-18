@@ -7,18 +7,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/Pugdag/pugdagd/util/txmass"
+	"github.com/pugdag/pugdagd/util/txmass"
 
-	"github.com/Pugdag/pugdagd/util/profiling"
+	"github.com/pugdag/pugdagd/util/profiling"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/keys"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
-	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient"
-	"github.com/Pugdag/pugdagd/infrastructure/os/signal"
-	"github.com/Pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/keys"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient"
+	"github.com/pugdag/pugdagd/infrastructure/os/signal"
+	"github.com/pugdag/pugdagd/util/panics"
 	"github.com/pkg/errors"
 
 	"google.golang.org/grpc"

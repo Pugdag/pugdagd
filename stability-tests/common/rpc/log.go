@@ -1,8 +1,8 @@
 package rpc
 
 import (
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
-	"github.com/Pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/util/panics"
 )
 
 // log is a logger that is initialized with no output filters. This

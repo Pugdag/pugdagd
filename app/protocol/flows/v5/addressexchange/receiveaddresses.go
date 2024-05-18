@@ -1,12 +1,12 @@
 package addressexchange
 
 import (
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/app/protocol/common"
-	peerpkg "github.com/Pugdag/pugdagd/app/protocol/peer"
-	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
-	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/protocol/common"
+	peerpkg "github.com/pugdag/pugdagd/app/protocol/peer"
+	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 // ReceiveAddressesContext is the interface for the context needed for the ReceiveAddresses flow.

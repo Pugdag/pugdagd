@@ -3,13 +3,13 @@ package consensusstatemanager_test
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/testapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/multiset"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/testapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/multiset"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
 )
 
 func TestUTXOCommitment(t *testing.T) {

@@ -2,7 +2,7 @@ Pugdagd
 ========
 
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/Pugdag/pugdagd/)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/pugdag/pugdagd/)
 
 Pugdagd is the reference full node Pugdag implementation written in Go (golang).
 
@@ -31,7 +31,7 @@ $ go version
 - Run the following commands to obtain and install pugdagd including all dependencies:
 
 ```bash
-$ git clone https://github.com/Pugdag/pugdagd/
+$ git clone https://github.com/pugdag/pugdagd/
 $ cd pugdagd
 $ go install . ./cmd/...
 ```
@@ -101,13 +101,13 @@ Join our discord server using the following link: https://discord.gg/Swj4saMdUV
 
 ## Issue Tracker
 
-The [integrated github issue tracker](https://github.com/Pugdag/pugdagd/issues)
+The [integrated github issue tracker](https://github.com/pugdag/pugdagd/issues)
 is used for this project.
 
 
 ## Documentation
 
-The [documentation](https://github.com/Pugdag/docs) is a work-in-progress
+The [documentation](https://github.com/pugdag/docs) is a work-in-progress
 
 ## License
 

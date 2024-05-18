@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/stability-tests/common"
 	"github.com/pkg/errors"
 )
 

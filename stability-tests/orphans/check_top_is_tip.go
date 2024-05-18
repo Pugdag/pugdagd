@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
 	"github.com/pkg/errors"
 )
 

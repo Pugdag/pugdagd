@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 )
 
 func TestCalcHalvingPeriodBlockSubsidy(t *testing.T) {

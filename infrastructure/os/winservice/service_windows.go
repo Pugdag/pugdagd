@@ -7,9 +7,9 @@ package winservice
 import (
 	"fmt"
 
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	"github.com/Pugdag/pugdagd/infrastructure/os/signal"
-	"github.com/Pugdag/pugdagd/version"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/os/signal"
+	"github.com/pugdag/pugdagd/version"
 	"github.com/btcsuite/winsvc/eventlog"
 	"github.com/btcsuite/winsvc/svc"
 )

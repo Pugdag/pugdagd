@@ -11,15 +11,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/mining"
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/mining"
+	"github.com/pugdag/pugdagd/util"
 	"github.com/kaspanet/go-secp256k1"
 
-	"github.com/Pugdag/pugdagd/stability-tests/common"
-	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
-	"github.com/Pugdag/pugdagd/util/panics"
-	"github.com/Pugdag/pugdagd/util/profiling"
+	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/util/profiling"
 	"github.com/pkg/errors"
 )
 

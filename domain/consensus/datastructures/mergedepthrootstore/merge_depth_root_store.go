@@ -1,10 +1,10 @@
 package mergedepthrootstore
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/lrucache"
-	"github.com/Pugdag/pugdagd/util/staging"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/lrucache"
+	"github.com/pugdag/pugdagd/util/staging"
 )
 
 var bucketName = []byte("merge-depth-roots")

@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/Pugdag/pugdagd/util/txmass"
+	"github.com/pugdag/pugdagd/util/txmass"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/util/difficulty"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/util/difficulty"
 )
 
 // blockValidator exposes a set of validation classes, after which

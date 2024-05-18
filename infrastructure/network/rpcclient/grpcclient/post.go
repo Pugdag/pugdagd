@@ -1,8 +1,8 @@
 package grpcclient
 
 import (
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/encoding/protojson"
 )

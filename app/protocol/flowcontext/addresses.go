@@ -1,7 +1,7 @@
 package flowcontext
 
 import (
-	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
 )
 
 // AddressManager returns the address manager associated to the flow context.

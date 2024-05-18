@@ -7,7 +7,7 @@ package bech32_test
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/util/bech32"
+	"github.com/pugdag/pugdagd/util/bech32"
 )
 
 var checkEncodingStringTests = []struct {

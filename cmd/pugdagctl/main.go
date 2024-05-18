@@ -5,14 +5,14 @@ import (
 	"os"
 	"time"
 
-	"github.com/Pugdag/pugdagd/version"
+	"github.com/pugdag/pugdagd/version"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
 
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient/grpcclient"
+	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient/grpcclient"
 )
 
 func main() {

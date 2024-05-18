@@ -1,16 +1,16 @@
 package v5
 
 import (
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/app/protocol/common"
-	"github.com/Pugdag/pugdagd/app/protocol/flowcontext"
-	"github.com/Pugdag/pugdagd/app/protocol/flows/v5/addressexchange"
-	"github.com/Pugdag/pugdagd/app/protocol/flows/v5/blockrelay"
-	"github.com/Pugdag/pugdagd/app/protocol/flows/v5/ping"
-	"github.com/Pugdag/pugdagd/app/protocol/flows/v5/rejects"
-	"github.com/Pugdag/pugdagd/app/protocol/flows/v5/transactionrelay"
-	peerpkg "github.com/Pugdag/pugdagd/app/protocol/peer"
-	routerpkg "github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/protocol/common"
+	"github.com/pugdag/pugdagd/app/protocol/flowcontext"
+	"github.com/pugdag/pugdagd/app/protocol/flows/v5/addressexchange"
+	"github.com/pugdag/pugdagd/app/protocol/flows/v5/blockrelay"
+	"github.com/pugdag/pugdagd/app/protocol/flows/v5/ping"
+	"github.com/pugdag/pugdagd/app/protocol/flows/v5/rejects"
+	"github.com/pugdag/pugdagd/app/protocol/flows/v5/transactionrelay"
+	peerpkg "github.com/pugdag/pugdagd/app/protocol/peer"
+	routerpkg "github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 type protocolManager interface {

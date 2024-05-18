@@ -1,6 +1,6 @@
 package model
 
-import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // HeadersSelectedChainStore represents a store of the headers selected chain
 type HeadersSelectedChainStore interface {

@@ -9,14 +9,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain"
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/Pugdag/pugdagd/domain/miningmanager/mempool"
-	"github.com/Pugdag/pugdagd/infrastructure/db/database/ldb"
+	"github.com/pugdag/pugdagd/domain"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/pugdag/pugdagd/domain/miningmanager/mempool"
+	"github.com/pugdag/pugdagd/infrastructure/db/database/ldb"
 )
 
 func TestCreateStagingConsensus(t *testing.T) {

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/util"
 	"github.com/pkg/errors"
 	"golang.org/x/exp/slices"
 )

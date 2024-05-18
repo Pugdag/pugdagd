@@ -1,6 +1,6 @@
 package model
 
-import "github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+import "github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
 // BlockHeaderStore represents a store of block headers
 type BlockHeaderStore interface {

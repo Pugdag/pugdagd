@@ -5,14 +5,14 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/testapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/blockheader"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/testapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/blockheader"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
 	"github.com/pkg/errors"
 )
 

@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	routerpkg "github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	routerpkg "github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/id"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/id"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server"
 )
 
 // NetConnection is a wrapper to a server connection for use by services external to NetAdapter

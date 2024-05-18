@@ -7,17 +7,17 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	"github.com/Pugdag/pugdagd/infrastructure/db/database"
-	"github.com/Pugdag/pugdagd/infrastructure/db/database/ldb"
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
-	"github.com/Pugdag/pugdagd/infrastructure/os/execenv"
-	"github.com/Pugdag/pugdagd/infrastructure/os/limits"
-	"github.com/Pugdag/pugdagd/infrastructure/os/signal"
-	"github.com/Pugdag/pugdagd/infrastructure/os/winservice"
-	"github.com/Pugdag/pugdagd/util/panics"
-	"github.com/Pugdag/pugdagd/util/profiling"
-	"github.com/Pugdag/pugdagd/version"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/infrastructure/db/database/ldb"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/infrastructure/os/execenv"
+	"github.com/pugdag/pugdagd/infrastructure/os/limits"
+	"github.com/pugdag/pugdagd/infrastructure/os/signal"
+	"github.com/pugdag/pugdagd/infrastructure/os/winservice"
+	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/util/profiling"
+	"github.com/pugdag/pugdagd/version"
 )
 
 const (

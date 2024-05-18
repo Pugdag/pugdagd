@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
 
 	// Required for profiling
 	_ "net/http/pprof"
@@ -16,7 +16,7 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/Pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/util/panics"
 )
 
 // heapDumpFileName is the name of the heap dump file. We want every run to have its own

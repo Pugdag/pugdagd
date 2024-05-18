@@ -7,7 +7,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 )
 
 // RunPugdagdForTesting runs pugdagd for testing purposes

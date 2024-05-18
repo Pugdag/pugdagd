@@ -3,9 +3,9 @@ package main
 import (
 	"sync/atomic"
 
-	"github.com/Pugdag/pugdagd/stability-tests/common"
-	"github.com/Pugdag/pugdagd/util/panics"
-	"github.com/Pugdag/pugdagd/util/profiling"
+	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/util/profiling"
 	"github.com/pkg/errors"
 )
 

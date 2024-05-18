@@ -5,7 +5,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/Pugdag/pugdagd/infrastructure/os/limits"
+	"github.com/pugdag/pugdagd/infrastructure/os/limits"
 )
 
 // Initialize initializes the execution environment required to run pugdagd

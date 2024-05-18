@@ -1,7 +1,7 @@
 package transactionid
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // FromString creates a new DomainTransactionID from the given string

@@ -3,12 +3,12 @@ package ready
 import (
 	"sync/atomic"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/app/protocol/common"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/protocol/common"
 
-	peerpkg "github.com/Pugdag/pugdagd/app/protocol/peer"
-	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
-	routerpkg "github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	peerpkg "github.com/pugdag/pugdagd/app/protocol/peer"
+	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
+	routerpkg "github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 )
 

@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/serialization"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionid"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/serialization"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionid"
 	"github.com/pkg/errors"
 )
 

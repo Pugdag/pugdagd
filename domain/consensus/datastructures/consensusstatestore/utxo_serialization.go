@@ -1,8 +1,8 @@
 package consensusstatestore
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/database/serialization"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/database/serialization"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 	"github.com/golang/protobuf/proto"
 )
 

@@ -1,4 +1,4 @@
-module github.com/Pugdag/pugdagd
+module github.com/pugdag/pugdagd
 
 go 1.18
 

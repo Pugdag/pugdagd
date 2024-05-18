@@ -1,11 +1,11 @@
 package mempool
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
-	"github.com/Pugdag/pugdagd/domain/miningmanager/mempool/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/pugdag/pugdagd/domain/miningmanager/mempool/model"
 	"github.com/pkg/errors"
 )
 

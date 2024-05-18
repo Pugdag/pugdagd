@@ -3,10 +3,10 @@ package server
 import (
 	"context"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/pugdag/pugdagd/util"
 )
 
 func (s *server) GetExternalSpendableUTXOs(_ context.Context, request *pb.GetExternalSpendableUTXOsRequest) (*pb.GetExternalSpendableUTXOsResponse, error) {

@@ -1,7 +1,7 @@
 package difficultymanager
 
 import (
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
 )
 
 var log = logger.RegisterSubSystem("DAA")

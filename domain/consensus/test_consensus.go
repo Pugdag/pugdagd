@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashset"
-	"github.com/Pugdag/pugdagd/util/staging"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/hashset"
+	"github.com/pugdag/pugdagd/util/staging"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/testapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
-	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/testapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

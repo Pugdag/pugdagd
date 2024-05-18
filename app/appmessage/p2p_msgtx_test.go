@@ -11,12 +11,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionid"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionid"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 	"github.com/davecgh/go-spew/spew"
 )
 

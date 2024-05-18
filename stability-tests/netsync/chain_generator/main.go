@@ -5,8 +5,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/Pugdag/pugdagd/stability-tests/common"
-	"github.com/Pugdag/pugdagd/stability-tests/common/mine"
+	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/stability-tests/common/mine"
 	"github.com/pkg/errors"
 )
 

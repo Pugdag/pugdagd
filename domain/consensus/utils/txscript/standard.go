@@ -7,12 +7,12 @@ package txscript
 import (
 	"fmt"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/util"
 )
 
 // ScriptClass is an enumeration for the list of standard types of script.

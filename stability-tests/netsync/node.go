@@ -8,14 +8,14 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/consensus"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/stability-tests/common"
-	"github.com/Pugdag/pugdagd/stability-tests/common/mine"
-	"github.com/Pugdag/pugdagd/stability-tests/common/rpc"
-	"github.com/Pugdag/pugdagd/util"
-	"github.com/Pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/stability-tests/common/mine"
+	"github.com/pugdag/pugdagd/stability-tests/common/rpc"
+	"github.com/pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/util/panics"
 	"github.com/pkg/errors"
 )
 

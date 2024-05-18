@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/util"
 )
 
 // mustParseShortForm parses the passed short form script and returns the

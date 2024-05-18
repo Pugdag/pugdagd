@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 func TestCreateDefaultConfigFile(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/infrastructure/db/database"
 )
 
 func validateCurrentCursorKeyAndValue(t *testing.T, testName string, cursor database.Cursor,

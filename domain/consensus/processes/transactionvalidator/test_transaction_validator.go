@@ -1,9 +1,9 @@
 package transactionvalidator
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/testapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/testapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
 )
 
 type testTransactionValidator struct {

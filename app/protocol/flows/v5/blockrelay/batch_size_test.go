@@ -3,7 +3,7 @@ package blockrelay
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 func TestIBDBatchSizeLessThanRouteCapacity(t *testing.T) {

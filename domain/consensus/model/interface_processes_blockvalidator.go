@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // BlockValidator exposes a set of validation classes, after which

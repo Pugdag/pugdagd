@@ -3,8 +3,8 @@ package serialization
 import (
 	"math"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
 	"github.com/pkg/errors"
 )
 

@@ -3,21 +3,21 @@ package server
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/serialization"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/serialization"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/keys"
-	"github.com/Pugdag/pugdagd/util/txmass"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/keys"
+	"github.com/pugdag/pugdagd/util/txmass"
 
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
 )
 
 func TestEstimateMassAfterSignatures(t *testing.T) {

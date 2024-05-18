@@ -1,13 +1,13 @@
 package rpccontext
 
 import (
-	"github.com/Pugdag/pugdagd/app/protocol"
-	"github.com/Pugdag/pugdagd/domain"
-	"github.com/Pugdag/pugdagd/domain/utxoindex"
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
-	"github.com/Pugdag/pugdagd/infrastructure/network/connmanager"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/pugdag/pugdagd/app/protocol"
+	"github.com/pugdag/pugdagd/domain"
+	"github.com/pugdag/pugdagd/domain/utxoindex"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/connmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
 )
 
 // Context represents the RPC context

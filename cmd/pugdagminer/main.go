@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/util"
 
-	"github.com/Pugdag/pugdagd/version"
+	"github.com/pugdag/pugdagd/version"
 
 	"github.com/pkg/errors"
 
 	_ "net/http/pprof"
 
-	"github.com/Pugdag/pugdagd/infrastructure/os/signal"
-	"github.com/Pugdag/pugdagd/util/panics"
-	"github.com/Pugdag/pugdagd/util/profiling"
+	"github.com/pugdag/pugdagd/infrastructure/os/signal"
+	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/util/profiling"
 )
 
 func main() {

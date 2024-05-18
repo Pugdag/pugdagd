@@ -4,8 +4,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
-	"github.com/Pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/stability-tests/common"
 
 	"github.com/jessevdk/go-flags"
 )

@@ -1,10 +1,10 @@
 package mergedepthmanager
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
-	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/ruleerrors"
+	"github.com/pugdag/pugdagd/infrastructure/db/database"
 	"github.com/pkg/errors"
 )
 

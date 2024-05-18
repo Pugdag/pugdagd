@@ -1,7 +1,7 @@
 package serialization
 
 import (
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // DomainBlockStatusToDbBlockStatus converts model.BlockStatus to DbBlockStatus

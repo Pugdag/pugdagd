@@ -3,7 +3,7 @@ package common
 import (
 	"strings"
 
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
 )
 
 // LogWriter writes to the given log with the given log level and prefix

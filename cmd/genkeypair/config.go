@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/config"
 	"github.com/jessevdk/go-flags"
 )
 

@@ -3,16 +3,16 @@ package standalone
 import (
 	"sync"
 
-	"github.com/Pugdag/pugdagd/app/protocol/common"
-	"github.com/Pugdag/pugdagd/util/mstime"
+	"github.com/pugdag/pugdagd/app/protocol/common"
+	"github.com/pugdag/pugdagd/util/mstime"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/id"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/id"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
 
 	"github.com/pkg/errors"
 )

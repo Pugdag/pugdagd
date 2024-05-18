@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/appmessage"
 )
 
 func Test16IncomingConnections(t *testing.T) {

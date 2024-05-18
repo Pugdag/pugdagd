@@ -27,8 +27,8 @@ variable (either directly, or hidden in a library call).
 		"fmt"
 		"log"
 
-		"github.com/Pugdag/pugdagd/util"
-		"github.com/Pugdag/pugdagd/domain/dagconfig"
+		"github.com/pugdag/pugdagd/util"
+		"github.com/pugdag/pugdagd/domain/dagconfig"
 	)
 
 	var testnet = flag.Bool("testnet", false, "operate on the testnet Kaspa network")

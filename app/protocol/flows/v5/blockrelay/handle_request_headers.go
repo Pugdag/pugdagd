@@ -1,13 +1,13 @@
 package blockrelay
 
 import (
-	"github.com/Pugdag/pugdagd/app/protocol/peer"
-	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/app/protocol/peer"
+	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/domain"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/domain"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 // This constant must be equal at both syncer and syncee. Therefore, never (!!) change this constant unless a new p2p

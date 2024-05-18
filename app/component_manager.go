@@ -4,22 +4,22 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/Pugdag/pugdagd/domain/miningmanager/mempool"
+	"github.com/pugdag/pugdagd/domain/miningmanager/mempool"
 
-	"github.com/Pugdag/pugdagd/app/protocol"
-	"github.com/Pugdag/pugdagd/app/rpc"
-	"github.com/Pugdag/pugdagd/domain"
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/utxoindex"
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	infrastructuredatabase "github.com/Pugdag/pugdagd/infrastructure/db/database"
-	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
-	"github.com/Pugdag/pugdagd/infrastructure/network/connmanager"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/id"
-	"github.com/Pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/app/protocol"
+	"github.com/pugdag/pugdagd/app/rpc"
+	"github.com/pugdag/pugdagd/domain"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/utxoindex"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	infrastructuredatabase "github.com/pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/connmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/id"
+	"github.com/pugdag/pugdagd/util/panics"
 )
 
 // ComponentManager is a wrapper for all the pugdagd services

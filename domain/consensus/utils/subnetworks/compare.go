@@ -3,7 +3,7 @@ package subnetworks
 import (
 	"bytes"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 )
 
 // Less returns true iff id a is less than id b

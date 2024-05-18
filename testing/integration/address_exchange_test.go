@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
 )
 
 func TestAddressExchange(t *testing.T) {

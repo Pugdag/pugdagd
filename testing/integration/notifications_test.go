@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/appmessage"
 )
 
 func setOnBlockAddedHandler(t *testing.T, harness *appHarness, handler func(notification *appmessage.BlockAddedNotificationMessage)) {

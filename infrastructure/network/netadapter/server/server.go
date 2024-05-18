@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 // OnConnectedHandler is a function that is to be called

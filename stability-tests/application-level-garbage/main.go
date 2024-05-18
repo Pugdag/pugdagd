@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/standalone"
-	"github.com/Pugdag/pugdagd/stability-tests/common"
-	"github.com/Pugdag/pugdagd/util/panics"
-	"github.com/Pugdag/pugdagd/util/profiling"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/standalone"
+	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/util/panics"
+	"github.com/pugdag/pugdagd/util/profiling"
 )
 
 func main() {

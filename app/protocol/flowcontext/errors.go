@@ -5,9 +5,9 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 
-	"github.com/Pugdag/pugdagd/app/protocol/protocolerrors"
+	"github.com/pugdag/pugdagd/app/protocol/protocolerrors"
 )
 
 var (

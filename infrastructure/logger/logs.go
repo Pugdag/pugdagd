@@ -39,7 +39,7 @@ import (
 	"runtime"
 	"sync/atomic"
 
-	"github.com/Pugdag/pugdagd/util/mstime"
+	"github.com/pugdag/pugdagd/util/mstime"
 )
 
 // Logger is a subsystem logger for a Backend.

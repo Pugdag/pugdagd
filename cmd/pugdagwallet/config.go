@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/Pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/config"
 	"github.com/pkg/errors"
 
 	"github.com/jessevdk/go-flags"

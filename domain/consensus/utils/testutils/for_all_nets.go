@@ -3,8 +3,8 @@ package testutils
 import (
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 )
 
 // ForAllNets runs the passed testFunc with all available networks

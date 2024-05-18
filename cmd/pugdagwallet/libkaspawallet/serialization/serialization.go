@@ -3,9 +3,9 @@ package serialization
 import (
 	"math"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/serialization/protoserialization"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet/serialization/protoserialization"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 )

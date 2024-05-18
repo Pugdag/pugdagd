@@ -1,7 +1,7 @@
 package flowcontext
 
 import (
-	"github.com/Pugdag/pugdagd/domain"
+	"github.com/pugdag/pugdagd/domain"
 )
 
 // Domain returns the Domain object associated to the flow context.

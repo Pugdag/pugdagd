@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient/grpcclient"
+	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient/grpcclient"
 	"github.com/pkg/errors"
 )
 

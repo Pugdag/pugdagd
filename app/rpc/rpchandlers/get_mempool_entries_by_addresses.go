@@ -1,12 +1,12 @@
 package rpchandlers
 
 import (
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/app/rpc/rpccontext"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/rpc/rpccontext"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/util"
 )
 
 // HandleGetMempoolEntriesByAddresses handles the respectively named RPC command

@@ -4,14 +4,14 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 
-	"github.com/Pugdag/pugdagd/infrastructure/db/database/ldb"
+	"github.com/pugdag/pugdagd/infrastructure/db/database/ldb"
 
-	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/infrastructure/db/database"
 
-	"github.com/Pugdag/pugdagd/app"
-	"github.com/Pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/app"
+	"github.com/pugdag/pugdagd/infrastructure/config"
 )
 
 type appHarness struct {

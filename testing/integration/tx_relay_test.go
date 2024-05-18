@@ -6,17 +6,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/protocol/flowcontext"
+	"github.com/pugdag/pugdagd/app/protocol/flowcontext"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionhelper"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/txscript"
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionhelper"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/txscript"
+	"github.com/pugdag/pugdagd/util"
 	"github.com/kaspanet/go-secp256k1"
 )
 

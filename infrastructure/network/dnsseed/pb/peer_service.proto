@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/Pugdag/pugdagd/pb";
+option go_package = "github.com/pugdag/pugdagd/pb";
 
 service PeerService {
   rpc GetPeersList(GetPeersListRequest) returns (GetPeersListResponse) {}

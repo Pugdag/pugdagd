@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/Pugdag/pugdagd/stability-tests/common"
-	"github.com/Pugdag/pugdagd/util/profiling"
+	"github.com/pugdag/pugdagd/stability-tests/common"
+	"github.com/pugdag/pugdagd/util/profiling"
 )
 
 const timeout = 5 * time.Second

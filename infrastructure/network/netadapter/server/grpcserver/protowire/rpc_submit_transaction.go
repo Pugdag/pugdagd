@@ -3,7 +3,7 @@ package protowire
 import (
 	"math"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/app/appmessage"
 	"github.com/pkg/errors"
 )
 

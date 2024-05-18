@@ -4,10 +4,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Pugdag/pugdagd/domain/consensusreference"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
-	"github.com/Pugdag/pugdagd/domain/miningmanager/blocktemplatebuilder"
-	mempoolpkg "github.com/Pugdag/pugdagd/domain/miningmanager/mempool"
+	"github.com/pugdag/pugdagd/domain/consensusreference"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/miningmanager/blocktemplatebuilder"
+	mempoolpkg "github.com/pugdag/pugdagd/domain/miningmanager/mempool"
 )
 
 // Factory instantiates new mining managers

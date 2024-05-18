@@ -7,14 +7,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/infrastructure/logger"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/infrastructure/logger"
 	"github.com/davecgh/go-spew/spew"
 
-	routerpkg "github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	routerpkg "github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 	"github.com/pkg/errors"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/server/grpcserver/protowire"
 )
 
 func (c *gRPCConnection) connectionLoops() error {

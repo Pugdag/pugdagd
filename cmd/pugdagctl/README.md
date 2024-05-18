@@ -22,7 +22,7 @@ $ go version
 - Run the following commands to obtain and install pugdagd including all dependencies:
 
 ```bash
-$ git clone https://github.com/Pugdag/pugdagd/
+$ git clone https://github.com/pugdag/pugdagd/
 $ cd pugdagd/cmd/pugdagctl
 $ go install .
 ```

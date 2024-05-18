@@ -4,17 +4,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Pugdag/pugdagd/util/difficulty"
+	"github.com/pugdag/pugdagd/util/difficulty"
 
-	"github.com/Pugdag/pugdagd/util/mstime"
+	"github.com/pugdag/pugdagd/util/mstime"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/consensushashing"
 
-	"github.com/Pugdag/pugdagd/domain/consensus"
-	"github.com/Pugdag/pugdagd/domain/consensus/model"
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/testutils"
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/consensus"
+	"github.com/pugdag/pugdagd/domain/consensus/model"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/testutils"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 )
 
 func TestDifficulty(t *testing.T) {

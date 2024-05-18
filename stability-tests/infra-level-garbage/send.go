@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/protocol/common"
+	"github.com/pugdag/pugdagd/app/protocol/common"
 	"github.com/pkg/errors"
 )
 

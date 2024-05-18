@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/client"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/client"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
 )
 
 func newAddress(conf *newAddressConfig) error {

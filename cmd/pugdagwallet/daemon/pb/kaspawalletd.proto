@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb";
+option go_package = "github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb";
 package pugdagwalletd;
 
 service pugdagwalletd {

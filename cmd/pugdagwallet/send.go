@@ -6,11 +6,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/client"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/keys"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/client"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/keys"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/constants"
 	"github.com/pkg/errors"
 )
 

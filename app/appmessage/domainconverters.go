@@ -6,14 +6,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/blockheader"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/utxo"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/blockheader"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/hashes"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/utxo"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/subnetworks"
-	"github.com/Pugdag/pugdagd/domain/consensus/utils/transactionid"
-	"github.com/Pugdag/pugdagd/util/mstime"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/subnetworks"
+	"github.com/pugdag/pugdagd/domain/consensus/utils/transactionid"
+	"github.com/pugdag/pugdagd/util/mstime"
 )
 
 // DomainBlockToMsgBlock converts an externalapi.DomainBlock to MsgBlock

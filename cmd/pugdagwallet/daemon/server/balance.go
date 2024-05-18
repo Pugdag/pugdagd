@@ -3,8 +3,8 @@ package server
 import (
 	"context"
 
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
-	"github.com/Pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/daemon/pb"
+	"github.com/pugdag/pugdagd/cmd/pugdagwallet/libkaspawallet"
 )
 
 type balancesType struct{ available, pending uint64 }

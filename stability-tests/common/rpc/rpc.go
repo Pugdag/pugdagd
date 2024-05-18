@@ -3,10 +3,10 @@ package rpc
 import (
 	"time"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/infrastructure/network/rpcclient"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/infrastructure/network/rpcclient"
 
-	"github.com/Pugdag/pugdagd/domain/dagconfig"
+	"github.com/pugdag/pugdagd/domain/dagconfig"
 )
 
 const defaultRPCServer = "localhost"

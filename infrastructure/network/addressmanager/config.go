@@ -3,7 +3,7 @@ package addressmanager
 import (
 	"net"
 
-	"github.com/Pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/config"
 )
 
 // Config is a descriptor which specifies the AddressManager instance configuration.

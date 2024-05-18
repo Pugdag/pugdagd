@@ -4,18 +4,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Pugdag/pugdagd/util/mstime"
+	"github.com/pugdag/pugdagd/util/mstime"
 
-	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
+	"github.com/pugdag/pugdagd/domain/consensus/model/externalapi"
 
-	"github.com/Pugdag/pugdagd/domain"
+	"github.com/pugdag/pugdagd/domain"
 
-	peerpkg "github.com/Pugdag/pugdagd/app/protocol/peer"
-	"github.com/Pugdag/pugdagd/infrastructure/config"
-	"github.com/Pugdag/pugdagd/infrastructure/network/addressmanager"
-	"github.com/Pugdag/pugdagd/infrastructure/network/connmanager"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/id"
+	peerpkg "github.com/pugdag/pugdagd/app/protocol/peer"
+	"github.com/pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/network/addressmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/connmanager"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/id"
 )
 
 // OnNewBlockTemplateHandler is a handler function that's triggered when a new block template is available

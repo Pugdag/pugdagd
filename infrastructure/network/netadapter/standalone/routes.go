@@ -3,12 +3,12 @@ package standalone
 import (
 	"time"
 
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter"
 
 	"github.com/pkg/errors"
 
-	"github.com/Pugdag/pugdagd/app/appmessage"
-	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
+	"github.com/pugdag/pugdagd/app/appmessage"
+	"github.com/pugdag/pugdagd/infrastructure/network/netadapter/router"
 )
 
 // Routes holds the incoming and outgoing routes of a connection created by MinimalNetAdapter

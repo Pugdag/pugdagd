@@ -1,8 +1,8 @@
 package prefixmanager
 
 import (
-	"github.com/Pugdag/pugdagd/domain/prefixmanager/prefix"
-	"github.com/Pugdag/pugdagd/infrastructure/db/database"
+	"github.com/pugdag/pugdagd/domain/prefixmanager/prefix"
+	"github.com/pugdag/pugdagd/infrastructure/db/database"
 )
 
 var activePrefixKey = database.MakeBucket(nil).Key([]byte("active-prefix"))

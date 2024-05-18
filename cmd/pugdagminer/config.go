@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/Pugdag/pugdagd/infrastructure/config"
+	"github.com/pugdag/pugdagd/infrastructure/config"
 
-	"github.com/Pugdag/pugdagd/util"
+	"github.com/pugdag/pugdagd/util"
 	"github.com/pkg/errors"
 
-	"github.com/Pugdag/pugdagd/version"
+	"github.com/pugdag/pugdagd/version"
 	"github.com/jessevdk/go-flags"
 )
 
