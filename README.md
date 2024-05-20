@@ -97,7 +97,7 @@ At this point your can close the wallet daemon, though you should keep it runnin
 
 
 ## Discord
-Join our discord server using the following link: https://discord.gg/Swj4saMdUV
+Join our discord server using the following link: https://discord.gg/pugdag
 
 ## Issue Tracker
 
