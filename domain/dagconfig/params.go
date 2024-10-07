@@ -43,14 +43,14 @@ var (
 	devnetPowMax = new(big.Int).Sub(new(big.Int).Lsh(bigOne, 255), bigOne)
 )
 
-// KType defines the size of GHOSTDAG kaspa algorithm K parameter.
+// KType defines the size of GHOSTDAG consensus algorithm K parameter.
 type KType uint8
 
 // Params defines a Kaspa network by its parameters. These parameters may be
 // used by Kaspa applications to differentiate networks as well as addresses
 // and keys for one network from those intended for use on another network.
 type Params struct {
-	// K defines the K parameter for GHOSTDAG kaspa algorithm.
+	// K defines the K parameter for GHOSTDAG consensus algorithm.
 	// See ghostdag.go for further details.
 	K externalapi.KType
 
@@ -91,7 +91,7 @@ type Params struct {
 	// SubsidyGenesisReward SubsidyMergeSetRewardMultiplier, and
 	// SubsidyPastRewardMultiplier are part of the block subsidy equation.
 	// Further details: https://hashdag.medium.com/kaspa-launch-plan-9a63f4d754a6
-	SubsidyGenesisReward            uint64
+	SubsidyGenesisReward       uint64
 	PreDeflationaryPhaseBaseSubsidy uint64
 	DeflationaryPhaseBaseSubsidy    uint64
 
@@ -110,7 +110,7 @@ type Params struct {
 	// to calculate the required difficulty of each block.
 	DifficultyAdjustmentWindowSize int
 
-	// These fields are related to voting on kaspa rule changes as
+	// These fields are related to voting on consensus rule changes as
 	// defined by BIP0009.
 	//
 	// RuleChangeActivationThreshold is the number of blocks in a threshold
@@ -121,7 +121,7 @@ type Params struct {
 	// MinerConfirmationWindow is the number of blocks in each threshold
 	// state retarget window.
 	//
-	// Deployments define the specific kaspa rule changes to be voted
+	// Deployments define the specific consensus rule changes to be voted
 	// on.
 	RuleChangeActivationThreshold uint64
 	MinerConfirmationWindow       uint64
@@ -179,7 +179,7 @@ type Params struct {
 	PruningProofM uint64
 
 	// DeflationaryPhaseDaaScore is the DAA score after which the monetary policy switches
-	// to its deflationary phase
+	// to its halving phase
 	DeflationaryPhaseDaaScore uint64
 
 	DisallowDirectBlocksOnTopOfGenesis bool
@@ -188,6 +188,8 @@ type Params struct {
 	MaxBlockLevel int
 
 	MergeDepth uint64
+
+	POWScores []uint64
 }
 
 // NormalizeRPCServerAddress returns addr with the current network default
@@ -215,23 +217,22 @@ var MainnetParams = Params{
 	DefaultPort: "26590",
 	DNSSeeds: []string{
 		"dnsseed1.pugdag.com",
-		"dnsseed2.pugdag.com",
 	},
 
 	// DAG parameters
-	GenesisBlock:                    &genesisBlock,
-	GenesisHash:                     genesisHash,
-	PowMax:                          mainPowMax,
-	BlockCoinbaseMaturity:           100,
-	SubsidyGenesisReward:            defaultSubsidyGenesisReward,
-	PreDeflationaryPhaseBaseSubsidy: defaultPreDeflationaryPhaseBaseSubsidy,
-	DeflationaryPhaseBaseSubsidy:    defaultDeflationaryPhaseBaseSubsidy,
-	TargetTimePerBlock:              defaultTargetTimePerBlock,
-	FinalityDuration:                defaultFinalityDuration,
-	DifficultyAdjustmentWindowSize:  defaultDifficultyAdjustmentWindowSize,
-	TimestampDeviationTolerance:     defaultTimestampDeviationTolerance,
+	GenesisBlock:                   &genesisBlock,
+	GenesisHash:                    genesisHash,
+	PowMax:                         mainPowMax,
+	BlockCoinbaseMaturity:          100,
+	SubsidyGenesisReward:           defaultSubsidyGenesisReward,
+	PreDeflationaryPhaseBaseSubsidy:defaultPreDeflationaryPhaseBaseSubsidy,
+	DeflationaryPhaseBaseSubsidy:   defaultDeflationaryPhaseBaseSubsidy,
+	TargetTimePerBlock:             defaultTargetTimePerBlock,
+	FinalityDuration:               defaultFinalityDuration,
+	DifficultyAdjustmentWindowSize: defaultDifficultyAdjustmentWindowSize,
+	TimestampDeviationTolerance:    defaultTimestampDeviationTolerance,
 
-	// Kaspa rule change deployments.
+	// Consensus rule change deployments.
 	//
 	// The miner confirmation window is defined as:
 	//   target proof of work timespan / target proof of work spacing
@@ -265,7 +266,7 @@ var MainnetParams = Params{
 	MergeSetSizeLimit:                       defaultMergeSetSizeLimit,
 	CoinbasePayloadScriptPublicKeyMaxLength: defaultCoinbasePayloadScriptPublicKeyMaxLength,
 	PruningProofM:                           defaultPruningProofM,
-	DeflationaryPhaseDaaScore:               defaultDeflationaryPhaseDaaScore,
+	DeflationaryPhaseDaaScore:                    defaultDeflationaryPhaseDaaScore,
 	// 	DisallowDirectBlocksOnTopOfGenesis:      true,
 	DisallowDirectBlocksOnTopOfGenesis: false,
 
@@ -273,6 +274,7 @@ var MainnetParams = Params{
 	// This means that any block that has a level lower or equal to genesis will be level 0.
 	MaxBlockLevel: 225,
 	MergeDepth:    defaultMergeDepth,
+	POWScores:     []uint64{12705000},
 }
 
 // TestnetParams defines the network parameters for the test Kaspa network.
@@ -288,19 +290,19 @@ var TestnetParams = Params{
 	},
 
 	// DAG parameters
-	GenesisBlock:                    &testnetGenesisBlock,
-	GenesisHash:                     testnetGenesisHash,
-	PowMax:                          testnetPowMax,
-	BlockCoinbaseMaturity:           100,
-	SubsidyGenesisReward:            defaultSubsidyGenesisReward,
-	PreDeflationaryPhaseBaseSubsidy: defaultPreDeflationaryPhaseBaseSubsidy,
-	DeflationaryPhaseBaseSubsidy:    defaultDeflationaryPhaseBaseSubsidy,
-	TargetTimePerBlock:              defaultTargetTimePerBlock,
-	FinalityDuration:                defaultFinalityDuration,
-	DifficultyAdjustmentWindowSize:  defaultDifficultyAdjustmentWindowSize,
-	TimestampDeviationTolerance:     defaultTimestampDeviationTolerance,
+	GenesisBlock:                   &testnetGenesisBlock,
+	GenesisHash:                    testnetGenesisHash,
+	PowMax:                         testnetPowMax,
+	BlockCoinbaseMaturity:          100,
+	SubsidyGenesisReward:           defaultSubsidyGenesisReward,
+	PreDeflationaryPhaseBaseSubsidy:     defaultPreDeflationaryPhaseBaseSubsidy,
+	DeflationaryPhaseBaseSubsidy:        defaultDeflationaryPhaseBaseSubsidy,
+	TargetTimePerBlock:             defaultTargetTimePerBlock,
+	FinalityDuration:               defaultFinalityDuration,
+	DifficultyAdjustmentWindowSize: defaultDifficultyAdjustmentWindowSize,
+	TimestampDeviationTolerance:    defaultTimestampDeviationTolerance,
 
-	// Kaspa rule change deployments.
+	// Consensus rule change deployments.
 	//
 	// The miner confirmation window is defined as:
 	//   target proof of work timespan / target proof of work spacing
@@ -334,10 +336,11 @@ var TestnetParams = Params{
 	MergeSetSizeLimit:                       defaultMergeSetSizeLimit,
 	CoinbasePayloadScriptPublicKeyMaxLength: defaultCoinbasePayloadScriptPublicKeyMaxLength,
 	PruningProofM:                           defaultPruningProofM,
-	DeflationaryPhaseDaaScore:               defaultDeflationaryPhaseDaaScore,
+	DeflationaryPhaseDaaScore:                    defaultDeflationaryPhaseDaaScore,
 
 	MaxBlockLevel: 250,
 	MergeDepth:    defaultMergeDepth,
+	POWScores:     []uint64{100},
 }
 
 // SimnetParams defines the network parameters for the simulation test Kaspa
@@ -356,19 +359,19 @@ var SimnetParams = Params{
 	DNSSeeds:    []string{}, // NOTE: There must NOT be any seeds.
 
 	// DAG parameters
-	GenesisBlock:                    &simnetGenesisBlock,
-	GenesisHash:                     simnetGenesisHash,
-	PowMax:                          simnetPowMax,
-	BlockCoinbaseMaturity:           100,
-	SubsidyGenesisReward:            defaultSubsidyGenesisReward,
-	PreDeflationaryPhaseBaseSubsidy: defaultPreDeflationaryPhaseBaseSubsidy,
-	DeflationaryPhaseBaseSubsidy:    defaultDeflationaryPhaseBaseSubsidy,
-	TargetTimePerBlock:              time.Millisecond,
-	FinalityDuration:                time.Minute,
-	DifficultyAdjustmentWindowSize:  defaultDifficultyAdjustmentWindowSize,
-	TimestampDeviationTolerance:     defaultTimestampDeviationTolerance,
+	GenesisBlock:                   &simnetGenesisBlock,
+	GenesisHash:                    simnetGenesisHash,
+	PowMax:                         simnetPowMax,
+	BlockCoinbaseMaturity:          100,
+	SubsidyGenesisReward:           defaultSubsidyGenesisReward,
+	PreDeflationaryPhaseBaseSubsidy:     defaultPreDeflationaryPhaseBaseSubsidy,
+	DeflationaryPhaseBaseSubsidy:        defaultDeflationaryPhaseBaseSubsidy,
+	TargetTimePerBlock:             time.Millisecond,
+	FinalityDuration:               time.Minute,
+	DifficultyAdjustmentWindowSize: defaultDifficultyAdjustmentWindowSize,
+	TimestampDeviationTolerance:    defaultTimestampDeviationTolerance,
 
-	// Kaspa rule change deployments.
+	// Consensus rule change deployments.
 	//
 	// The miner confirmation window is defined as:
 	//   target proof of work timespan / target proof of work spacing
@@ -400,7 +403,7 @@ var SimnetParams = Params{
 	MergeSetSizeLimit:                       defaultMergeSetSizeLimit,
 	CoinbasePayloadScriptPublicKeyMaxLength: defaultCoinbasePayloadScriptPublicKeyMaxLength,
 	PruningProofM:                           defaultPruningProofM,
-	DeflationaryPhaseDaaScore:               defaultDeflationaryPhaseDaaScore,
+	DeflationaryPhaseDaaScore:                    defaultDeflationaryPhaseDaaScore,
 
 	MaxBlockLevel: 250,
 	MergeDepth:    defaultMergeDepth,
@@ -416,19 +419,19 @@ var DevnetParams = Params{
 	DNSSeeds:    []string{}, // NOTE: There must NOT be any seeds.
 
 	// DAG parameters
-	GenesisBlock:                    &devnetGenesisBlock,
-	GenesisHash:                     devnetGenesisHash,
-	PowMax:                          devnetPowMax,
-	BlockCoinbaseMaturity:           100,
-	SubsidyGenesisReward:            defaultSubsidyGenesisReward,
-	PreDeflationaryPhaseBaseSubsidy: defaultPreDeflationaryPhaseBaseSubsidy,
-	DeflationaryPhaseBaseSubsidy:    defaultDeflationaryPhaseBaseSubsidy,
-	TargetTimePerBlock:              defaultTargetTimePerBlock,
-	FinalityDuration:                defaultFinalityDuration,
-	DifficultyAdjustmentWindowSize:  defaultDifficultyAdjustmentWindowSize,
-	TimestampDeviationTolerance:     defaultTimestampDeviationTolerance,
+	GenesisBlock:                   &devnetGenesisBlock,
+	GenesisHash:                    devnetGenesisHash,
+	PowMax:                         devnetPowMax,
+	BlockCoinbaseMaturity:          100,
+	SubsidyGenesisReward:           defaultSubsidyGenesisReward,
+	PreDeflationaryPhaseBaseSubsidy:     defaultPreDeflationaryPhaseBaseSubsidy,
+	DeflationaryPhaseBaseSubsidy:        defaultDeflationaryPhaseBaseSubsidy,
+	TargetTimePerBlock:             defaultTargetTimePerBlock,
+	FinalityDuration:               defaultFinalityDuration,
+	DifficultyAdjustmentWindowSize: defaultDifficultyAdjustmentWindowSize,
+	TimestampDeviationTolerance:    defaultTimestampDeviationTolerance,
 
-	// Kaspa rule change deployments.
+	// Consensus rule change deployments.
 	//
 	// The miner confirmation window is defined as:
 	//   target proof of work timespan / target proof of work spacing
@@ -462,20 +465,20 @@ var DevnetParams = Params{
 	MergeSetSizeLimit:                       defaultMergeSetSizeLimit,
 	CoinbasePayloadScriptPublicKeyMaxLength: defaultCoinbasePayloadScriptPublicKeyMaxLength,
 	PruningProofM:                           defaultPruningProofM,
-	DeflationaryPhaseDaaScore:               defaultDeflationaryPhaseDaaScore,
+	DeflationaryPhaseDaaScore:                    defaultDeflationaryPhaseDaaScore,
 
 	MaxBlockLevel: 250,
 	MergeDepth:    defaultMergeDepth,
 }
 
-// ErrDuplicateNet describes an error where the parameters for a Pugdag
+// ErrDuplicateNet describes an error where the parameters for a Kaspa
 // network could not be set due to the network already being a standard
 // network or previously-registered into this package.
 var ErrDuplicateNet = errors.New("duplicate Pugdag network")
 
 var registeredNets = make(map[appmessage.KaspaNet]struct{})
 
-// Register registers the network parameters for a Pugdag network. This may
+// Register registers the network parameters for a Kaspa network. This may
 // error with ErrDuplicateNet if the network is already registered (either
 // due to a previous Register call, or the network being one of the default
 // networks).

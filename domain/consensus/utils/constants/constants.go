@@ -2,9 +2,17 @@ package constants
 
 import "math"
 
-const (
-	// BlockVersion represents the current block version
+var (
+	// BlockVersion represents the current block
+	// 1 Karlsenhash
+	// 2 Astrixhash
 	BlockVersion uint16 = 1
+)
+
+const (
+	DevFee        = 10
+	DevFeeMin     = 1
+	DevFeeAddress = "pugdag:qqpfrc7awpuynp4swmlefy533gu6hm5sz2c0amxdra9cavjarpz3z6uwmp93u"
 
 	// MaxTransactionVersion is the current latest supported transaction version.
 	MaxTransactionVersion uint16 = 0

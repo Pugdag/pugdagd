@@ -3,7 +3,6 @@ module github.com/Pugdag/pugdagd
 go 1.18
 
 require (
-	github.com/Pugdag/pugdagd v1.0.0
 	github.com/btcsuite/btcutil v1.0.2
 	github.com/btcsuite/go-socks v0.0.0-20170105172521-4720035b7bfd
 	github.com/btcsuite/winsvc v1.0.0
@@ -23,13 +22,16 @@ require (
 	google.golang.org/grpc v1.38.0
 	google.golang.org/protobuf v1.28.1
 	lukechampine.com/blake3 v1.2.1
+
 )
 
 require (
+	github.com/dchest/blake256 v1.0.0 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/klauspost/cpuid/v2 v2.0.9 // indirect
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
 	google.golang.org/genproto v0.0.0-20210604141403-392c879c8b08 // indirect
+	gopkg.in/yaml.v2 v2.3.0 // indirect
 )

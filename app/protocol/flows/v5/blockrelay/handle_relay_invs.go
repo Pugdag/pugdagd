@@ -11,6 +11,7 @@ import (
 	"github.com/Pugdag/pugdagd/domain/consensus/model/externalapi"
 	"github.com/Pugdag/pugdagd/domain/consensus/ruleerrors"
 	"github.com/Pugdag/pugdagd/domain/consensus/utils/consensushashing"
+	"github.com/Pugdag/pugdagd/domain/consensus/utils/constants"
 	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashset"
 	"github.com/Pugdag/pugdagd/infrastructure/config"
 	"github.com/Pugdag/pugdagd/infrastructure/network/netadapter/router"
@@ -132,6 +133,21 @@ func (flow *handleRelayInvsFlow) start() error {
 		if exists {
 			log.Debugf("Aborting requesting block %s because it already exists", inv.Hash)
 			continue
+		}
+
+		if !flow.IsIBDRunning() {
+			daaScore := block.Header.DAAScore()
+			var version uint16 = 1
+			for _, powScore := range flow.Config().ActiveNetParams.POWScores {
+				if daaScore >= powScore {
+					version = version + 1
+				}
+			}
+			constants.BlockVersion = version
+			if block.Header.Version() != constants.BlockVersion {
+				log.Infof("Cannot process %s, Wrong block version %d, it should be %d", consensushashing.BlockHash(block), block.Header.Version(), constants.BlockVersion)
+				continue
+			}
 		}
 
 		err = flow.banIfBlockIsHeaderOnly(block)

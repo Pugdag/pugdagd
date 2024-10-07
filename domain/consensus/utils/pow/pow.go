@@ -6,6 +6,8 @@ import (
 	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
 	"github.com/Pugdag/pugdagd/domain/consensus/utils/serialization"
 	"github.com/Pugdag/pugdagd/util/difficulty"
+    "lukechampine.com/blake3"
+	"golang.org/x/crypto/sha3"
 
 	"math/big"
 
@@ -19,6 +21,7 @@ type State struct {
 	Nonce      uint64
 	Target     big.Int
 	prePowHash externalapi.DomainHash
+	blockVersion uint16
 }
 
 // NewState creates a new state with pre-computed values to speed up mining
@@ -32,18 +35,38 @@ func NewState(header externalapi.MutableBlockHeader) *State {
 	prePowHash := consensushashing.HeaderHash(header)
 	header.SetTimeInMilliseconds(timestamp)
 	header.SetNonce(nonce)
-
+	if header.Version() == 2 {
+		return &State{
+			Target:       *target,
+			prePowHash:   *prePowHash,
+			mat:          *generatePugdagMatrix(prePowHash),
+			Timestamp:    timestamp,
+			Nonce:        nonce,
+			blockVersion: header.Version(),
+		}
+	}
 	return &State{
-		Target:     *target,
-		prePowHash: *prePowHash,
-		mat:        *generateMatrix(prePowHash),
-		Timestamp:  timestamp,
-		Nonce:      nonce,
+		Target:       *target,
+		prePowHash:   *prePowHash,
+		mat:          *generateMatrix(prePowHash),
+		Timestamp:    timestamp,
+		Nonce:        nonce,
+		blockVersion: header.Version(),
+	}
+}
+
+func (state *State) CalculateProofOfWorkValue() *big.Int {
+	if state.blockVersion == 1 {
+		return state.CalculateProofOfWorkValueKarlsenHash()
+	} else if state.blockVersion == 2 {
+		return state.CalculateProofOfWorkValueAstrixHash()
+	} else {
+		return state.CalculateProofOfWorkValueKarlsenHash() // default to the oldest version.
 	}
 }
 
 // CalculateProofOfWorkValue hashes the internal header and returns its big.Int value
-func (state *State) CalculateProofOfWorkValue() *big.Int {
+func (state *State) CalculateProofOfWorkValueKarlsenHash() *big.Int {
 	// PRE_POW_HASH || TIME || 32 zero byte padding || NONCE
 	writer := hashes.NewPoWHashWriter()
 	writer.InfallibleWrite(state.prePowHash.ByteSlice())
@@ -61,6 +84,46 @@ func (state *State) CalculateProofOfWorkValue() *big.Int {
 	heavyHash := state.mat.HeavyHash(powHash)
 	return toBig(heavyHash)
 }
+
+// CalculateProofOfWorkValue hashes the internal header and returns its big.Int value
+func (state *State) CalculateProofOfWorkValueAstrixHash() *big.Int {
+	// PRE_POW_HASH || TIME || 32 zero byte padding || NONCE
+	writer := hashes.NewPoWHashWriter()
+	writer.InfallibleWrite(state.prePowHash.ByteSlice())
+	err := serialization.WriteElement(writer, state.Timestamp)
+	if err != nil {
+		panic(errors.Wrap(err, "this should never happen. Hash digest should never return an error"))
+	}
+	zeroes := [32]byte{}
+	writer.InfallibleWrite(zeroes[:])
+	err = serialization.WriteElement(writer, state.Nonce)
+	if err != nil {
+		panic(errors.Wrap(err, "this should never happen. Hash digest should never return an error"))
+	}
+	powHash := writer.Finalize()
+
+	//Blake3
+	blake3Hash := blake3.Sum256(powHash.ByteSlice())
+	blake3HashBytes := blake3Hash[:]
+
+	//SHA3-256
+	sha3Hasher := sha3.New256()
+	sha3Hasher.Write(blake3HashBytes)
+	sha3HashBytes := sha3Hasher.Sum(nil)
+
+	// DomainHash
+	sha3DomainHash, err := externalapi.NewDomainHashFromByteSlice(sha3HashBytes)
+	if err != nil {
+		panic(errors.Wrap(err, "failed to create DomainHash from SHA3 hash bytes"))
+	}
+
+	//Heavy Hash with matrix
+	heavyHash := state.mat.HeavyHash(sha3DomainHash)
+
+	
+	return toBig(heavyHash)
+}
+
 
 // IncrementNonce the nonce in State by 1
 func (state *State) IncrementNonce() {

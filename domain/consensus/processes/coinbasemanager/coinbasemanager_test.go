@@ -9,19 +9,19 @@ import (
 	"github.com/Pugdag/pugdagd/domain/dagconfig"
 )
 
-func TestCalcHalvingPeriodBlockSubsidy(t *testing.T) {
+func TestCalcDeflationaryPeriodBlockSubsidy(t *testing.T) {
 	const secondsPerMonth = 2629800
 	const secondsPerHalving = secondsPerMonth * 12
-	const halvingPhaseDaaScore = secondsPerMonth * 12
-	const halvingPhaseBaseSubsidy = 6 * constants.SompiPerKaspa
+	const deflationaryPhaseDaaScore = secondsPerMonth * 12
+	const deflationaryPhaseBaseSubsidy = 6 * constants.SompiPerKaspa
 	coinbaseManagerInterface := New(
 		nil,
 		0,
 		0,
 		0,
 		&externalapi.DomainHash{},
-		halvingPhaseDaaScore,
-		halvingPhaseBaseSubsidy,
+		deflationaryPhaseDaaScore,
+		deflationaryPhaseBaseSubsidy,
 		nil,
 		nil,
 		nil,
@@ -38,56 +38,56 @@ func TestCalcHalvingPeriodBlockSubsidy(t *testing.T) {
 	}{
 		{
 			name:                 "start of halving phase",
-			blockDaaScore:        halvingPhaseDaaScore,
-			expectedBlockSubsidy: halvingPhaseBaseSubsidy,
+			blockDaaScore:        deflationaryPhaseDaaScore,
+			expectedBlockSubsidy: deflationaryPhaseBaseSubsidy,
 		},
 		{
 			name:                 "after one halving",
-			blockDaaScore:        halvingPhaseDaaScore + secondsPerHalving,
-			expectedBlockSubsidy: halvingPhaseBaseSubsidy / 2,
+			blockDaaScore:        deflationaryPhaseDaaScore + secondsPerHalving,
+			expectedBlockSubsidy: deflationaryPhaseBaseSubsidy / 2,
 		},
 		{
 			name:                 "after two halvings",
-			blockDaaScore:        halvingPhaseDaaScore + secondsPerHalving*2,
-			expectedBlockSubsidy: halvingPhaseBaseSubsidy / 4,
+			blockDaaScore:        deflationaryPhaseDaaScore + secondsPerHalving*2,
+			expectedBlockSubsidy: deflationaryPhaseBaseSubsidy / 4,
 		},
 		{
 			name:                 "after five halvings",
-			blockDaaScore:        halvingPhaseDaaScore + secondsPerHalving*5,
-			expectedBlockSubsidy: halvingPhaseBaseSubsidy / 32,
+			blockDaaScore:        deflationaryPhaseDaaScore + secondsPerHalving*5,
+			expectedBlockSubsidy: deflationaryPhaseBaseSubsidy / 32,
 		},
 		{
 			name:                 "after 32 halvings",
-			blockDaaScore:        halvingPhaseDaaScore + secondsPerHalving*32,
-			expectedBlockSubsidy: halvingPhaseBaseSubsidy / 4294967296,
+			blockDaaScore:        deflationaryPhaseDaaScore + secondsPerHalving*32,
+			expectedBlockSubsidy: deflationaryPhaseBaseSubsidy / 4294967296,
 		},
 		{
 			name:                 "just before subsidy depleted",
-			blockDaaScore:        halvingPhaseDaaScore + secondsPerHalving*35,
+			blockDaaScore:        deflationaryPhaseDaaScore + secondsPerHalving*35,
 			expectedBlockSubsidy: 1,
 		},
 		{
 			name:                 "after subsidy depleted",
-			blockDaaScore:        halvingPhaseDaaScore + secondsPerHalving*36,
+			blockDaaScore:        deflationaryPhaseDaaScore + secondsPerHalving*36,
 			expectedBlockSubsidy: 0,
 		},
 	}
 
 	for _, test := range tests {
-		blockSubsidy := coinbaseManagerInstance.calcHalvingPeriodBlockSubsidy(test.blockDaaScore)
+		blockSubsidy := coinbaseManagerInstance.calcDeflationaryPeriodBlockSubsidy(test.blockDaaScore)
 		if blockSubsidy != test.expectedBlockSubsidy {
-			t.Errorf("TestCalcHalvingPeriodBlockSubsidy: test '%s' failed. Want: %d, got: %d",
+			t.Errorf("TestCalcDeflationaryPeriodBlockSubsidy: test '%s' failed. Want: %d, got: %d",
 				test.name, test.expectedBlockSubsidy, blockSubsidy)
 		}
 	}
 }
 
 func TestBuildSubsidyTable(t *testing.T) {
-	halvingPhaseBaseSubsidy := dagconfig.MainnetParams.HalvingPhaseBaseSubsidy
-	if halvingPhaseBaseSubsidy != 8*constants.SompiPerKaspa {
+	deflationaryPhaseBaseSubsidy := dagconfig.MainnetParams.DeflationaryPhaseBaseSubsidy
+	if deflationaryPhaseBaseSubsidy != 8*constants.SompiPerKaspa {
 		t.Errorf("TestBuildSubsidyTable: table generation function was not updated to reflect "+
-			"the new base subsidy %d. Please fix the constant above and replace subsidyByHalvingMonthTable "+
-			"in coinbasemanager.go with the printed table", halvingPhaseBaseSubsidy)
+			"the new base subsidy %d. Please fix the constant above and replace subsidyByDeflationaryMonthTable "+
+			"in coinbasemanager.go with the printed table", deflationaryPhaseBaseSubsidy)
 	}
 	coinbaseManagerInterface := New(
 		nil,
@@ -96,7 +96,7 @@ func TestBuildSubsidyTable(t *testing.T) {
 		0,
 		&externalapi.DomainHash{},
 		0,
-		halvingPhaseBaseSubsidy,
+		deflationaryPhaseBaseSubsidy,
 		nil,
 		nil,
 		nil,
@@ -108,7 +108,7 @@ func TestBuildSubsidyTable(t *testing.T) {
 
 	var subsidyTable []uint64
 	for M := uint64(0); ; M++ {
-		subsidy := coinbaseManagerInstance.calcHalvingPeriodBlockSubsidyFloatCalc(M)
+		subsidy := coinbaseManagerInstance.calcDeflationaryPeriodBlockSubsidyFloatCalc(M)
 		subsidyTable = append(subsidyTable, subsidy)
 		if subsidy == 0 {
 			break

@@ -10,7 +10,7 @@ const validCharacters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrs
 
 const (
 	appMajor uint = 1
-	appMinor uint = 0
+	appMinor uint = 1
 	appPatch uint = 2
 )
 
@@ -19,10 +19,10 @@ const (
 // It MUST only contain characters from validCharacters.
 var appBuild string
 
-var version = "1.0.2" // string used for memoization of version
+var version = "" // string used for memoization of version
 
 func init() {
-	if version == "1.0.1" {
+	if version == "" {
 		// Start with the major, minor, and patch versions.
 		version = fmt.Sprintf("%d.%d.%d", appMajor, appMinor, appPatch)
 
