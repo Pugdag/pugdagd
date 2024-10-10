@@ -213,10 +213,10 @@ var MainnetParams = Params{
 	K:           defaultGHOSTDAGK,
 	Name:        "pugdag-mainnet",
 	Net:         appmessage.Mainnet,
-	RPCPort:     "26589",
-	DefaultPort: "26590",
+	RPCPort:     "26089",
+	DefaultPort: "26090",
 	DNSSeeds: []string{
-		"dnsseed1.pugdag.com",
+		//"dnsseed1.pugdag.com",
 	},
 
 	// DAG parameters
@@ -274,7 +274,7 @@ var MainnetParams = Params{
 	// This means that any block that has a level lower or equal to genesis will be level 0.
 	MaxBlockLevel: 225,
 	MergeDepth:    defaultMergeDepth,
-	POWScores:     []uint64{12705000},
+	POWScores:     []uint64{100},
 }
 
 // TestnetParams defines the network parameters for the test Kaspa network.

@@ -6,13 +6,38 @@ import (
 	"github.com/Pugdag/pugdagd/domain/consensus/utils/hashes"
 	"github.com/Pugdag/pugdagd/domain/consensus/utils/serialization"
 	"github.com/Pugdag/pugdagd/util/difficulty"
-    "lukechampine.com/blake3"
-	"golang.org/x/crypto/sha3"
+	"golang.org/x/crypto/blake2b"
+	"encoding/binary"
+	"crypto/sha256"
 
 	"math/big"
 
 	"github.com/pkg/errors"
 )
+
+const tableSize = 1 << 20 // 64 KB table (reduced from 16 MB)
+var lookupTable [tableSize]uint64
+
+func generateHoohashLookupTable() {
+	// Initialize lookup table deterministically
+	var seed [32]byte
+	for i := range lookupTable {
+		// Use SHA-256 to generate deterministic values
+		binary.BigEndian.PutUint32(seed[:], uint32(i))
+		hash := sha256.Sum256(seed[:])
+		lookupTable[i] = binary.BigEndian.Uint64(hash[:8])
+	}
+}
+
+func timeMemoryTradeoff(input uint64) uint64 {
+	result := input
+	for i := 0; i < 1000; i++ { // Number of lookups
+		index := result % tableSize
+		result ^= lookupTable[index]
+		result = (result << 1) | (result >> 63) // Rotate left by 1
+	}
+	return result
+}
 
 // State is an intermediate data structure with pre-computed values to speed up mining.
 type State struct {
@@ -39,7 +64,7 @@ func NewState(header externalapi.MutableBlockHeader) *State {
 		return &State{
 			Target:       *target,
 			prePowHash:   *prePowHash,
-			mat:          *generatePugdagMatrix(prePowHash),
+			mat:          *GenerateHoohashMatrix(prePowHash),
 			Timestamp:    timestamp,
 			Nonce:        nonce,
 			blockVersion: header.Version(),
@@ -55,11 +80,64 @@ func NewState(header externalapi.MutableBlockHeader) *State {
 	}
 }
 
+func memoryHardFunction(input []byte) []byte {
+	const memorySize = 1 << 10 // 2^16 = 65536
+	const iterations = 2
+
+	memory := make([]uint64, memorySize)
+
+	// Initialize memory
+	for i := range memory {
+		memory[i] = binary.LittleEndian.Uint64(input)
+	}
+
+	// Perform memory-hard computations
+	for i := 0; i < iterations; i++ {
+		for j := 0; j < memorySize; j++ {
+			index1 := memory[j] % uint64(memorySize)
+			index2 := (memory[j] >> 32) % uint64(memorySize)
+
+			hash, _ := blake2b.New512(nil)
+			binary.Write(hash, binary.LittleEndian, memory[index1])
+			binary.Write(hash, binary.LittleEndian, memory[index2])
+
+			memory[j] = binary.LittleEndian.Uint64(hash.Sum(nil))
+		}
+	}
+
+	// Combine results
+	result := make([]byte, 64)
+	for i := 0; i < 8; i++ {
+		binary.LittleEndian.PutUint64(result[i*8:], memory[i])
+	}
+	return result
+}
+
+func verifiableDelayFunction(input []byte) []byte {
+	const iterations = 1000 // Adjust based on desired delay
+
+	// Create a prime field
+	p, _ := new(big.Int).SetString("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F", 16)
+
+	// Convert input to big.Int
+	x := new(big.Int).SetBytes(input)
+
+	// Perform repeated squaring
+	for i := 0; i < iterations; i++ {
+		x.Mul(x, x)
+		x.Mod(x, p)
+	}
+
+	// Hash the result to get final output
+	hash := sha256.Sum256(x.Bytes())
+	return hash[:]
+}
+
 func (state *State) CalculateProofOfWorkValue() *big.Int {
 	if state.blockVersion == 1 {
 		return state.CalculateProofOfWorkValueKarlsenHash()
 	} else if state.blockVersion == 2 {
-		return state.CalculateProofOfWorkValueAstrixHash()
+		return state.CalculateProofOfWorkValueHooHash()
 	} else {
 		return state.CalculateProofOfWorkValueKarlsenHash() // default to the oldest version.
 	}
@@ -86,9 +164,9 @@ func (state *State) CalculateProofOfWorkValueKarlsenHash() *big.Int {
 }
 
 // CalculateProofOfWorkValue hashes the internal header and returns its big.Int value
-func (state *State) CalculateProofOfWorkValueAstrixHash() *big.Int {
+func (state *State) CalculateProofOfWorkValueHooHash() *big.Int {
 	// PRE_POW_HASH || TIME || 32 zero byte padding || NONCE
-	writer := hashes.NewPoWHashWriter()
+	writer := hashes.Blake3HashWriter2()
 	writer.InfallibleWrite(state.prePowHash.ByteSlice())
 	err := serialization.WriteElement(writer, state.Timestamp)
 	if err != nil {
@@ -101,27 +179,8 @@ func (state *State) CalculateProofOfWorkValueAstrixHash() *big.Int {
 		panic(errors.Wrap(err, "this should never happen. Hash digest should never return an error"))
 	}
 	powHash := writer.Finalize()
-
-	//Blake3
-	blake3Hash := blake3.Sum256(powHash.ByteSlice())
-	blake3HashBytes := blake3Hash[:]
-
-	//SHA3-256
-	sha3Hasher := sha3.New256()
-	sha3Hasher.Write(blake3HashBytes)
-	sha3HashBytes := sha3Hasher.Sum(nil)
-
-	// DomainHash
-	sha3DomainHash, err := externalapi.NewDomainHashFromByteSlice(sha3HashBytes)
-	if err != nil {
-		panic(errors.Wrap(err, "failed to create DomainHash from SHA3 hash bytes"))
-	}
-
-	//Heavy Hash with matrix
-	heavyHash := state.mat.HeavyHash(sha3DomainHash)
-
-	
-	return toBig(heavyHash)
+	multiplied := state.mat.HoohashMatrixMultiplication(powHash)
+	return toBig(multiplied)
 }
 
 
