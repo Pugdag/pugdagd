@@ -213,10 +213,10 @@ var MainnetParams = Params{
 	K:           defaultGHOSTDAGK,
 	Name:        "pugdag-mainnet",
 	Net:         appmessage.Mainnet,
-	RPCPort:     "26089",
-	DefaultPort: "26090",
+	RPCPort:     "26589",
+	DefaultPort: "26590",
 	DNSSeeds: []string{
-		//"dnsseed1.pugdag.com",
+		"dnsseed1.pugdag.com",
 	},
 
 	// DAG parameters
