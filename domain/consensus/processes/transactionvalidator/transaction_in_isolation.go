@@ -131,7 +131,7 @@ func (v *transactionValidator) checkCoinbaseInIsolation(tx *externalapi.DomainTr
 		return errors.Wrap(ruleerrors.ErrCoinbaseWithInputs, "coinbase has inputs")
 	}
 
-	outputsLimit := uint64(v.ghostdagK) + 2
+	outputsLimit := uint64(v.ghostdagK) * 2
 	if uint64(len(tx.Outputs)) > outputsLimit {
 		return errors.Wrapf(ruleerrors.ErrCoinbaseTooManyOutputs, "coinbase has too many outputs: got %d where the limit is %d", len(tx.Outputs), outputsLimit)
 	}
